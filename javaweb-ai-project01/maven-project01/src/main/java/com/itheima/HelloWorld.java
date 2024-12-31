@@ -46,6 +46,12 @@ package com.itheima;
  * 		SNAPSHOT：功能不稳定、尚处于开发中的版本，即快照版本
  * 		RELEASE：功能趋于稳定、当前更新停止，可以用于发行的版本
  */
+
+/*
+ * 导入Maven项目：
+ * 	- 建议将要导入的maven项目复制到你的项目目录下
+ * 	- 建议选择maven项目的pom.xml文件进行导入
+ */
 public class HelloWorld {
 	public static void main(String[] args) {
 		System.out.println("Hello Maven");
