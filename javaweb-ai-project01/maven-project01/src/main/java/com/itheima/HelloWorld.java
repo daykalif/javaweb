@@ -22,6 +22,30 @@ package com.itheima;
  * 		- 远程仓库（2）
  * 		- 中央仓库（3）
  */
+
+
+/*
+ * Maven坐标：
+ * 	什么是坐标？
+ * 		- Maven中坐标是资源（jar）的唯一标识，通过该坐标可以唯一定位资源位置。
+ * 		- 使用坐标来定义项目或引入项目中需要的依赖。
+ *
+ * 	Maven坐标组成：
+ * 		- groupId：定义当前Maven项目隶属组织名称（通常是域名反写，例如：com.itheima）
+ * 		- artifactId：定义当前Maven项目名称（通常是模块名称，例如 order-service、goods-service）
+ * 		- version：定义当前项目版本号
+ * 				- SNAPSHOT：功能不稳定、尚处于开发中的版本，即快照版本
+ * 				- RELEASE：功能趋于稳定、当前更新停止，可以用于发行的版本
+ *
+ * 小结：
+ * 	1.Maven的坐标由那几个部分组成？各部分的含义是什么？
+ * 		groupId：组织名称
+ * 		artifactId：模块名称
+ * 		version：版本号
+ * 	2.Maven项目的版本分类？
+ * 		SNAPSHOT：功能不稳定、尚处于开发中的版本，即快照版本
+ * 		RELEASE：功能趋于稳定、当前更新停止，可以用于发行的版本
+ */
 public class HelloWorld {
 	public static void main(String[] args) {
 		System.out.println("Hello Maven");
