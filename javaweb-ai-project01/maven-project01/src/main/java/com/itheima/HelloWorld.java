@@ -65,6 +65,15 @@ package com.itheima;
  *  	一旦依赖配置变更了，记得重新加载
  *  	引入的依赖本地仓库不存在，记得联网
  */
+
+/*
+ * Maven生命周期：
+ * 	- clean：清理
+ * 	- compile：编译
+ * 	- test：测试
+ * 	- package：打包
+ * 	- install：安装
+ */
 public class HelloWorld {
 	public static void main(String[] args) {
 		System.out.println("Hello Maven");
