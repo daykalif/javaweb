@@ -52,6 +52,19 @@ package com.itheima;
  * 	- 建议将要导入的maven项目复制到你的项目目录下
  * 	- 建议选择maven项目的pom.xml文件进行导入
  */
+
+/*
+ * 依赖配置：
+ * 	1.依赖配置的方式？
+ * 		<dependencies>
+ *        	<dependency>...</dependency>
+ *      </dependencies>
+ *  2.如何排除依赖？
+ *  	<exclusions>...</exclusions>
+ *  3.注意事项：
+ *  	一旦依赖配置变更了，记得重新加载
+ *  	引入的依赖本地仓库不存在，记得联网
+ */
 public class HelloWorld {
 	public static void main(String[] args) {
 		System.out.println("Hello Maven");
