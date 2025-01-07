@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javaweb-ai-project01.iml" filepath="$PROJECT_DIR$/javaweb-ai-project01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-web-quickstart/springboot-web-quickstart.iml" filepath="$PROJECT_DIR$/springboot-web-quickstart/springboot-web-quickstart.iml" />
     </modules>
   </component>
 </project>
