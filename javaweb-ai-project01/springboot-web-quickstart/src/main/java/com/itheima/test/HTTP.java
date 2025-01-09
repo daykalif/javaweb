@@ -15,6 +15,13 @@ package com.itheima.test;
  *  - 3xx：重定向
  *  - 4xx：客户端错误
  *  - 5xx：服务端错误
+ *
+ * 4.HTTP响应数据需要程序员自己动手设置吗？
+ * 	- 不需要
+ *  - Web服务器对HTTP响应数据进行了封装（HTTPServletResponse）
+ *
+ * 5.响应状态码、响应头需要我们手动指定吗？
+ * 	- 通常情况下，我们无需手动制定、服务器会根据请求逻辑自动设置
  */
 public class HTTP {
 }
