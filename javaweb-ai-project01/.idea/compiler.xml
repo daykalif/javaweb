@@ -12,16 +12,17 @@
         <module name="maven-project03" />
         <module name="springboot-web-quickstart" />
       </profile>
-      <profile name="Annotation profile for springboot-web-demo03" enabled="true">
+      <profile name="Annotation profile for springboot-web-demo04" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="/usr/local/apache-maven-3.9.4/mvn_repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="springboot-web-demo01" />
         <module name="springboot-web-demo02" />
         <module name="springboot-web-demo03" />
-        <module name="springboot-web-demo01" />
+        <module name="springboot-web-demo04" />
       </profile>
     </annotationProcessing>
   </component>
@@ -30,6 +31,7 @@
       <module name="springboot-web-demo01" options="-parameters" />
       <module name="springboot-web-demo02" options="-parameters" />
       <module name="springboot-web-demo03" options="-parameters" />
+      <module name="springboot-web-demo04" options="-parameters" />
       <module name="springboot-web-quickstart" options="-parameters" />
     </option>
   </component>
