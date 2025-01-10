@@ -4,6 +4,7 @@ import com.itheima.dao.UserDao;
 import com.itheima.pojo.User;
 import com.itheima.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -12,7 +13,7 @@ import java.util.List;
 
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl3 implements UserService {
 	@Autowired	//	应用程序运行时，会自动的查询该类型的bean对象，并赋值给该成员变量
 	private UserDao userDao;    //	多态的使用方式
 
@@ -30,7 +31,7 @@ public class UserServiceImpl implements UserService {
 			String name = parts[3];
 			Integer age = Integer.parseInt(parts[4]);
 			LocalDateTime updateTime = LocalDateTime.parse(parts[5], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-			return new User(id, username, password, name, age, updateTime);
+			return new User(id + 300, username, password, name, age, updateTime);
 		}).toList();
 
 		return userList;
