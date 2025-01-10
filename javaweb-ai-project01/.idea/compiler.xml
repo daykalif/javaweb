@@ -10,6 +10,7 @@
         <module name="maven-project01" />
         <module name="maven-project02" />
         <module name="maven-project03" />
+        <module name="mysql-demo01" />
         <module name="springboot-web-quickstart" />
       </profile>
       <profile name="Annotation profile for springboot-web-demo04" enabled="true">
@@ -28,6 +29,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mysql-demo01" options="-parameters" />
       <module name="springboot-web-demo01" options="-parameters" />
       <module name="springboot-web-demo02" options="-parameters" />
       <module name="springboot-web-demo03" options="-parameters" />
