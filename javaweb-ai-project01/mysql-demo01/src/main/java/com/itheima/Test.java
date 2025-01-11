@@ -20,7 +20,7 @@ package com.itheima;
  */
 public class Test {
 	/*
-	 * -- 查询数据库
+	 *-- 查询数据库
 	 * show databases;
 	 *
 	 * -- 创建数据库
@@ -110,5 +110,57 @@ public class Test {
 	 *
 	 * -- 删除表
 	 * drop table employee;
+	 *
+	 *
+	 *
+	 * -- ------------> DML 表数据操作 <----------------
+	 * -- DML : 数据操作语言
+	 *
+	 * -- DML : 插入数据 - insert
+	 * -- 1. 为 emp 表的 username, password, name, gender, phone 字段插入值
+	 * insert into emp(username, password, name, gender, phone)
+	 * values ('admin', '123456', '管理员', 1, '13888888888');
+	 *
+	 *
+	 * -- 2. 为 emp 表的 所有字段插入值
+	 * -- 方式1:
+	 * insert into emp(id, username, password, name, gender, phone, job, salary, entry_date, image, create_time, update_time)
+	 * values (null, 'root', '12345678', 'root', 1, '13788889999', 1, 6000, '2020-01-01',
+	 *         'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1911272957,1476945884&fm=26&gp=0.', now(), now());
+	 * -- 方式2:
+	 * insert into emp
+	 * values (null, 'wjp', '123456789', 'root', 1, '13733334444', 1, 6000, '2020-01-01',
+	 *         'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1911272957,1476945884&fm=26&gp=0.', now(), now());
+	 *
+	 *
+	 * -- 3. 批量为 emp 表的 username, password, name, gender, phone  字段插入数据
+	 * insert into emp(username, password, name, gender, phone)
+	 * values ('lisi', '123456', '李四', 1, '13133338887'),
+	 *        ('wangwu', '123456', '王五', 1, '13133338888'),
+	 *        ('zhaoliu', '123456', '赵六', 1, '13133338889');
+	 *
+	 *
+	 * -- DML : 更新数据 - update
+	 * -- 1. 将 emp 表的ID为1员工 用户名更新为 'zhangsan', 姓名name字段更新为 '张三'
+	 * update emp
+	 * set username = 'zhangsan',
+	 *     name     = '张三'
+	 * where id = 1;
+	 *
+	 *
+	 * -- 2. 将 emp 表的所有员工的入职日期更新为 '2010-01-01'
+	 * update emp
+	 * set entry_date = '2010-01-01';
+	 *
+	 *
+	 * -- DML : 删除数据 - delete
+	 * -- 1. 删除 emp 表中 ID为1的员工
+	 * delete
+	 * from emp
+	 * where id = 1;
+	 *
+	 * -- 2. 删除 emp 表中的所有员工
+	 * delete
+	 * from emp;
 	 */
 }
