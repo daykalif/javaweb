@@ -20,7 +20,7 @@ package com.itheima;
  */
 public class Test {
 	/*
-	 *-- 查询数据库
+	 * -- 查询数据库
 	 * show databases;
 	 *
 	 * -- 创建数据库
@@ -35,7 +35,7 @@ public class Test {
 	 * -- 删除数据库
 	 * drop database db01;
 	 *
-	 * -- ------------> DDL 表操作----------------
+	 * -- ------------> DDL 表操作 <----------------
 	 * -- 创建表
 	 * create table user
 	 * (
@@ -58,7 +58,6 @@ public class Test {
 	 * ) comment '用户信息表';
 	 *
 	 *
-	 *
 	 * -- ------------> 案例 <----------------
 	 * -- 设计员工表 emp
 	 * -- 基础字段：id 主键；create_time 创建时间；update_time 修改时间；
@@ -78,5 +77,38 @@ public class Test {
 	 *     create_time datetime comment '创建时间',
 	 *     update_time datetime comment '修改时间'
 	 * ) comment '员工表';
+	 *
+	 *
+	 * -- 查询当前数据库所有表
+	 * show tables;
+	 *
+	 * -- 查看表结构
+	 * desc emp;
+	 *
+	 * -- 查询建表语句
+	 * show create table emp;
+	 *
+	 * -- 字段：添加字段 qq varchar(13)
+	 * alter table emp
+	 *     add column qq varchar(13) comment 'QQ号码';
+	 *
+	 * -- 字段：修改字段类型 qq varchar(15)
+	 * alter table emp
+	 *     modify column qq varchar(15) comment 'QQ号码';
+	 *
+	 * -- 字段：修改字段名 qq -> qq_num varchar(15)
+	 * alter table emp
+	 *     change column qq qq_num varchar(15) comment 'QQ号码';
+	 *
+	 * -- 字段：删除字段 qq_num
+	 * alter table emp
+	 *     drop column qq_num;
+	 *
+	 * -- 修改表名
+	 * alter table emp
+	 *     rename to employee;
+	 *
+	 * -- 删除表
+	 * drop table employee;
 	 */
 }
