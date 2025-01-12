@@ -237,10 +237,11 @@ public class Test {
 	 * from emp;
 	 *
 	 * -- 2. 查询返回所有字段
+	 * -- 方式一：
 	 * select *
 	 * from emp;
 	 *
-	 * -- 【推荐使用下面这种方式查询所有字段】
+	 * -- 方式二：【推荐使用下面这种方式查询所有字段】
 	 * select id,
 	 *        name,
 	 *        password,
@@ -263,5 +264,79 @@ public class Test {
 	 * -- 4. 查询已有的员工关联了哪几种职位(不要重复) - 关键字 distinct
 	 * select distinct job
 	 * from emp;
+	 *
+	 *
+	 * --  =================== DQL: 条件查询 ======================
+	 * -- 1. 查询 姓名 为 柴进 的员工
+	 * select *
+	 * from emp
+	 * where name = '柴进';
+	 *
+	 * -- 2. 查询 薪资小于等于5000 的员工信息
+	 * select *
+	 * from emp
+	 * where salary <= 5000;
+	 *
+	 * -- 3. 查询 没有分配职位 的员工信息
+	 * select *
+	 * from emp
+	 * where job is null;
+	 *
+	 *
+	 * -- 4. 查询 有职位 的员工信息
+	 * select *
+	 * from emp
+	 * where job is not null;
+	 *
+	 * -- 5. 查询 密码不等于 '123456' 的员工信息
+	 * select *
+	 * from emp
+	 * where password != '123456';
+	 *
+	 * select *
+	 * from emp
+	 * where password <> '123456';
+	 *
+	 * -- 6. 查询 入职日期 在 '2000-01-01' (包含) 到 '2010-01-01'(包含) 之间的员工信息
+	 * -- 语法：select * from emp where entry_date between '最小值' and '最大值';
+	 * select *
+	 * from emp
+	 * where entry_date between '2000-01-01' and '2010-01-01';
+	 *
+	 *
+	 * -- 7. 查询 入职时间 在 '2000-01-01' (包含) 到 '2010-01-01'(包含) 之间 且 性别为女 的员工信息
+	 * select *
+	 * from emp
+	 * where entry_date between '2000-01-01' and '2010-01-01'
+	 *   and gender = 2;
+	 *
+	 * -- 8. 查询 职位是 2 (讲师), 3 (学工主管), 4 (教研主管) 的员工信息
+	 * -- 方式一：
+	 * select *
+	 * from emp
+	 * where job = 2
+	 *    or job = 3
+	 *    or job = 4;
+	 *
+	 * -- 方式二：
+	 * select *
+	 * from emp
+	 * where job in (2, 3, 4);
+	 *
+	 *
+	 * -- 9. 查询 姓名 为两个字的员工信息（_：单个字符；%：任意字符）
+	 * select *
+	 * from emp
+	 * where name like '__';
+	 *
+	 * -- 10. 查询 姓 '阮' 的员工信息
+	 * select *
+	 * from emp
+	 * where name like '阮%';
+	 *
+	 * -- 11. 查询 姓名中包含 '二' 的员工信息
+	 * select *
+	 * from emp
+	 * where name like '%二%';
 	 */
 }
