@@ -11,6 +11,7 @@
         <module name="maven-project02" />
         <module name="maven-project03" />
         <module name="mysql-demo01" />
+        <module name="jdbc-demo" />
         <module name="springboot-web-quickstart" />
       </profile>
       <profile name="Annotation profile for springboot-web-demo04" enabled="true">
