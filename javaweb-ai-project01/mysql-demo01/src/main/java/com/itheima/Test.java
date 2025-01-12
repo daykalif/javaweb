@@ -338,5 +338,74 @@ public class Test {
 	 * select *
 	 * from emp
 	 * where name like '%二%';
+	 *
+	 *
+	 * --  =================== DQL: 分组查询 ======================
+	 * -- 聚合函数
+	 * -- 注意：所有的聚合函数都不参与null的字段
+	 *
+	 * -- 1. 统计该企业员工数量 -- count
+	 * -- count(字段)
+	 * select count(id)
+	 * from emp;
+	 *
+	 * select count(username)
+	 * from emp;
+	 *
+	 * select count(job)
+	 * from emp;
+	 *
+	 * -- count(*)：【推荐】
+	 * select count(*)
+	 * from emp;
+	 *
+	 * -- count(常量)
+	 * select count(-1)
+	 * from emp;
+	 *
+	 * select count(0)
+	 * from emp; -- 表示有记录就记录一个0，最后统计有几个0
+	 *
+	 * select count(1)
+	 * from emp;
+	 * -- 表示有记录就记录一个1，最后统计有几个1
+	 *
+	 * -- 2. 统计该企业员工的平均薪资
+	 * select avg(salary)
+	 * from emp;
+	 *
+	 *
+	 * -- 3. 统计该企业员工的最低薪资
+	 * select min(salary)
+	 * from emp;
+	 *
+	 *
+	 * -- 4. 统计该企业员工的最高薪资
+	 * select max(salary)
+	 * from emp;
+	 *
+	 *
+	 * -- 5. 统计该企业每月要给员工发放的薪资总额(薪资之和)
+	 * select sum(salary)
+	 * from emp;
+	 *
+	 *
+	 *
+	 * -- 分组
+	 * -- 语法：select 分组字段,聚合函数(字段) from 表名 group by 分组字段;
+	 * -- 注意：分组之后，select后的字段列表不能随意书写，能写的一般是 分组字段 + 聚合函数；
+	 * -- 注意：分组字段不能参与聚合函数；
+	 *
+	 * -- 1. 根据性别分组 , 统计男性和女性员工的数量
+	 * select gender, count(*)
+	 * from emp
+	 * group by gender;
+	 *
+	 * -- 2. 先查询入职时间在 '2015-01-01' (包含) 以前的员工 , 并对结果根据职位分组 , 获取员工数量大于等于2的职位
+	 * select job, count(*)
+	 * from emp
+	 * where entry_date <= '2015-01-01'
+	 * group by job
+	 * having count(*) >= 2;
 	 */
 }
