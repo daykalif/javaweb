@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sql_prepared_demo-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jdbc-demo/src/main/resources/SQL注入演示/sql_prepared_demo-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
