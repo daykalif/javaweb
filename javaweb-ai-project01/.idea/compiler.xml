@@ -12,9 +12,10 @@
         <module name="maven-project03" />
         <module name="mysql-demo01" />
         <module name="jdbc-demo" />
+        <module name="springboot-mybatis-quickstart" />
         <module name="springboot-web-quickstart" />
       </profile>
-      <profile name="Annotation profile for springboot-web-demo04" enabled="true">
+      <profile name="Annotation profile for springboot-mybatis-quickstart" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -31,6 +32,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mysql-demo01" options="-parameters" />
+      <module name="springboot-mybatis-quickstart" options="-parameters" />
       <module name="springboot-web-demo01" options="-parameters" />
       <module name="springboot-web-demo02" options="-parameters" />
       <module name="springboot-web-demo03" options="-parameters" />
