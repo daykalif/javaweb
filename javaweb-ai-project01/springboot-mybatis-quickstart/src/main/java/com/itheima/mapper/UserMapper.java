@@ -31,9 +31,19 @@ public interface UserMapper {
 	@Insert("insert into user(username, password, name, age) values(#{username}, #{password}, #{name}, #{age})")
 	public void insert(User user);
 
-	/**
+	/*
 	 * 更新用户
 	 */
 	@Update("update user set username = #{username}, password = #{password}, name = #{name}, age = #{age} where id = #{id}")
 	public void update(User user);
+
+	/*
+	 * 根据用户名和密码查询用户
+	 */
+	@Select("select id, username, password, name, age from user where username = #{username_alias} and password = #{password_alias}")
+	public User findByUsernameAndPassword(@Param("username_alias") String username, @Param("password_alias") String password);
+
+
+	@Select("select id, username, password, name, age from user where username = #{username} and password = #{password}")
+	public User findByUsernameAndPassword1(String username, String password);
 }
