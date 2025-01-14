@@ -29,4 +29,10 @@ class SpringbootMybatisQuickstartApplicationTests {
 		Integer i = userMapper.deleteById1(4);
 		System.out.println("执行完毕，影响的记录数：" + i);
 	}
+
+	@Test
+	public void testInsert() {
+		User user = new User(null, "admin", "123456", "管理员", 18);
+		userMapper.insert(user);
+	}
 }

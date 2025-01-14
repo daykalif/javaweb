@@ -23,4 +23,11 @@ public interface UserMapper {
 
 	@Delete("delete from user where id = #{id}")
 	public Integer deleteById1(Integer id);
+
+
+	/*
+	 * 新增用户
+	 */
+	@Insert("insert into user(username, password, name, age) values(#{username}, #{password}, #{name}, #{age})")
+	public void insert(User user);
 }
