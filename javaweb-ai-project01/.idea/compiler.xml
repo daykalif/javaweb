@@ -15,7 +15,7 @@
         <module name="springboot-mybatis-quickstart" />
         <module name="springboot-web-quickstart" />
       </profile>
-      <profile name="Annotation profile for springboot-mybatis-quickstart" enabled="true">
+      <profile name="Annotation profile for springboot-web-demo04" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />

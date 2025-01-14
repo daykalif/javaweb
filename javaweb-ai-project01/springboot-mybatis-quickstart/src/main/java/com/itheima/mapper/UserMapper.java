@@ -30,4 +30,10 @@ public interface UserMapper {
 	 */
 	@Insert("insert into user(username, password, name, age) values(#{username}, #{password}, #{name}, #{age})")
 	public void insert(User user);
+
+	/**
+	 * 更新用户
+	 */
+	@Update("update user set username = #{username}, password = #{password}, name = #{name}, age = #{age} where id = #{id}")
+	public void update(User user);
 }
