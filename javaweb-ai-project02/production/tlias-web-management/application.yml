@@ -7,7 +7,7 @@ spring:
     url: jdbc:mysql://localhost:3306/tlias
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Wjp7867137639
+    password: xxxx
 
 #Mybatis的相关配置
 mybatis:

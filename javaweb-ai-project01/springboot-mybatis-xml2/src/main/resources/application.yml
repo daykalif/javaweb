@@ -21,7 +21,7 @@ spring:
     url: jdbc:mysql://localhost:3306/web01
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: xxxx
+    password: Wjp7867137639
 
 #Mybatis的相关配置
 mybatis:
