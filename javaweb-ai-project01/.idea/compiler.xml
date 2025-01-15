@@ -10,8 +10,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="web-project" />
+        <module name="springboot-mybatis-xml2" />
         <module name="springboot-mybatis-xml" />
+        <module name="javaweb-ai-project01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,9 @@
       <module name="springboot-web-demo03" target="17" />
       <module name="springboot-web-demo04" target="17" />
       <module name="springboot-web-quickstart" target="17" />
+      <module name="web-project" target="17" />
+      <module name="web-project (1) (org.itheima)" target="17" />
+      <module name="web-project (2) (org.example)" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,6 +37,7 @@
       <module name="mysql-demo01" options="-parameters" />
       <module name="springboot-mybatis-quickstart" options="" />
       <module name="springboot-mybatis-xml" options="-parameters" />
+      <module name="springboot-mybatis-xml2" options="-parameters" />
       <module name="springboot-web-demo01" options="-parameters" />
       <module name="springboot-web-demo02" options="-parameters" />
       <module name="springboot-web-demo03" options="-parameters" />
