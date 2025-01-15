@@ -1,0 +1,30 @@
+#定义对象/Map集合
+user:
+  name: Tom
+  age: 18
+  gender: 男
+
+#定义数组/List/Set集合
+hobby:
+  - Java
+  - Game
+  - Sport
+
+
+#有以下配置后，就不需要application.properties文件了【二选一即可】
+spring:
+  application:
+    name: springboot-mybatis-quickstart
+  #数据库的连接信息
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/web01
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: xxxx
+
+#Mybatis的相关配置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
