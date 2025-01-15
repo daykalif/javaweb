@@ -14,6 +14,15 @@
         <module name="springboot-mybatis-xml" />
         <module name="javaweb-ai-project01" />
       </profile>
+      <profile name="Annotation profile for springboot-web-demo01" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="/usr/local/apache-maven-3.9.4/mvn_repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="springboot-web-demo01" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jdbc-demo" target="17" />
@@ -22,7 +31,6 @@
       <module name="maven-project03" target="17" />
       <module name="mysql-demo01" target="17" />
       <module name="springboot-mybatis-quickstart" target="1.5" />
-      <module name="springboot-web-demo01" target="17" />
       <module name="springboot-web-demo02" target="17" />
       <module name="springboot-web-demo03" target="17" />
       <module name="springboot-web-demo04" target="17" />

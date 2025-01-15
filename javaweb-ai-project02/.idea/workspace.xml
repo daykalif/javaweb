@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/9038e2c1-1fb2-41ba-a579-eb35732c0c3a/storage_v2/_src_/schema/tilas.CQOUBg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/TliasWebManagementApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-Apifox/Apifox-小结.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-Apifox/Apifox1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-Apifox/Apifox2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-RestfulAPI/Restful1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-RestfulAPI/Restful2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-RestfulAPI/Restful3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-RestfulAPI/Restful4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-RestfulAPI/Restful5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战1-创建工程目录.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战10-创建数据库.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战11-打开数据库控制台.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战12-创建数据表.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战2-配置jdk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战3-配置jdk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战4-检测maven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战5-配置编码.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战6-创建spriingboot工程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战7-创建springboot工程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战8-创建springboot工程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程实战/工程实战9-删除多余文件.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程搭建/工程搭建1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程搭建/工程搭建2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程搭建/工程搭建3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程搭建/工程搭建4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/sql-数据库表/dept.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/test/java/com/itheima/TliasWebManagementApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project01/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project01/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project01/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/apache-maven-3.9.4" />
+        <option name="userSettingsFile" value="/usr/local/apache-maven-3.9.4/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2reY4PcWmKGAMiVdomZFhKptEvN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/src/main/resources/static/sql-数据库表&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/sql-数据库表" />
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-Apifox" />
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-restfulAPI" />
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img-工程搭建" />
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="" />
+      <created>1736920817638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736920817638</updated>
+      <workItem from="1736920818694" duration="958000" />
+      <workItem from="1736921791406" duration="1187000" />
+      <workItem from="1736922997770" duration="73000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
