@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/../src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="web-project" />
+        <module name="springboot-mybatis-xml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +32,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mysql-demo01" options="-parameters" />
       <module name="springboot-mybatis-quickstart" options="" />
+      <module name="springboot-mybatis-xml" options="-parameters" />
       <module name="springboot-web-demo01" options="-parameters" />
       <module name="springboot-web-demo02" options="-parameters" />
       <module name="springboot-web-demo03" options="-parameters" />
