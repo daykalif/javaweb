@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f971911-7c8a-4f64-b2cd-2f7a0db9e6d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-demo01/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-demo01/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-demo01/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-demo01/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-demo01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-demo01/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-quickstart/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-quickstart/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-quickstart/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-quickstart/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-quickstart/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springboot-web-quickstart/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/main/resources/static/img-工程实战/工程实战19-报错处理.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/main/java/com/itheima/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/main/java/com/itheima/mapper/DeptMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/test/java/com/itheima/TliasWebManagementApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../javaweb-ai-project02/tlias-web-management/src/test/java/com/itheima/TliasWebManagementApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736926475520</updated>
-      <workItem from="1736926476550" duration="556000" />
+      <workItem from="1736926476550" duration="807000" />
     </task>
     <servers />
   </component>
