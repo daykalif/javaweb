@@ -13,3 +13,5 @@ spring:
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 方式三：开启驼峰命名，如果字段名与属性名符合驼峰命名规则，则mybatis会自动通过驼峰命名规则映射。
+    map-underscore-to-camel-case: true
