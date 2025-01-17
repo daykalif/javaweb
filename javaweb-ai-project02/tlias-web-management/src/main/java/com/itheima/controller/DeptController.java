@@ -68,6 +68,7 @@ public class DeptController {
 	@DeleteMapping("/depts")
 	public Result delete(Integer id) {
 		System.out.println("根据Id删除部门===>" + id);
+		deptService.deleteById(id);
 		return Result.success();
 	}
 

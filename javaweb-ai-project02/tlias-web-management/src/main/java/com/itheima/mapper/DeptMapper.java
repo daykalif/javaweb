@@ -1,10 +1,7 @@
 package com.itheima.mapper;
 
 import com.itheima.pojo.Dept;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -32,4 +29,10 @@ public interface DeptMapper {
 	// 选中括号中的内容，右键>"Show Context Actions">"inject language or reference">MySql
 	@Select("select id, name, create_time, update_time from dept order by update_time desc;")
 	public List<Dept> findAll();
+
+	/**
+	 * 根据id删除部门
+	 */
+	@Delete("delete from dept where id = #{id} ")	// 预编译接口，#{id} 会变成 ?
+	void deleteById(Integer id);
 }
