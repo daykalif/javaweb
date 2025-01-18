@@ -24,4 +24,9 @@ public interface DeptService {
 	 * 根据id查询部门信息
 	 */
 	Dept getInfoById(Integer id);
+
+	/**
+	 * 修改部门-接口层
+	 */
+	void update(Dept dept);
 }
