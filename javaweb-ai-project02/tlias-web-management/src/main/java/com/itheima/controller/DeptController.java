@@ -17,6 +17,7 @@ import java.util.List;
  * @Controller：将控制层的类也交给IOC容器管理
  * @ResponseBody：标识当前方法的返回值，直接作为响应体返回给浏览器；如果返回值是一个对象，则默认转换为json格式返回；
  */
+@RequestMapping("/depts")
 @RestController
 public class DeptController {
 	@Autowired        // Controller层需要调用Service层，则依赖注入service；应用程序运行时，会自动的查询该类型的bean对象，并赋值给该成员变量
@@ -25,7 +26,7 @@ public class DeptController {
 	/*
 	 * 查询全部部门
 	 */
-	@GetMapping("/depts")    //	@RequestMapping(value = "/depts", method = RequestMethod.GET)
+	@GetMapping    //	@RequestMapping(value = "/depts", method = RequestMethod.GET)
 	public Result list() {
 		System.out.println("查询全部部门");
 		List<Dept> deptList = deptService.findAll();
@@ -37,7 +38,7 @@ public class DeptController {
 	/*
 	 * 删除部门 - 方式一：HttpServletRequest 获取请求参数
 	 */
-	//@DeleteMapping("/depts")
+	//@DeleteMapping
 	//public Result delete(HttpServletRequest request) {
 	//	String idStr = request.getParameter("id");
 	//	int id = Integer.parseInt(idStr);
@@ -55,7 +56,7 @@ public class DeptController {
 	 * 如果希望该参数不是必须的，则需要设置required属性为false：
 	 * 		public Result delete(@RequestParam(value = "id", required = false) Integer deptId)
 	 */
-	//@DeleteMapping("/depts")
+	//@DeleteMapping
 	//public Result delete(@RequestParam("id") Integer deptId) {
 	//	System.out.println("根据Id删除部门-->" + deptId);
 	//	return Result.success();
@@ -65,7 +66,7 @@ public class DeptController {
 	/*
 	 * 删除部门 - 方式三：如果请求参数名与形参变量名相同，直接定义方法形参即可接收。（省略@RequestParam）
 	 */
-	@DeleteMapping("/depts")
+	@DeleteMapping
 	public Result delete(Integer id) {
 		System.out.println("根据Id删除部门===>" + id);
 		deptService.deleteById(id);
@@ -77,7 +78,7 @@ public class DeptController {
 	/**
 	 * Step1:新增部门
 	 */
-	@PostMapping("/depts")
+	@PostMapping
 	public Result add(@RequestBody Dept dept) {
 		System.out.println("新增部门：" + dept);
 		// Step2:调用Service层新增部门
@@ -90,14 +91,14 @@ public class DeptController {
 	/*
 	 * 根据Id查询部门
 	 */
-	//@GetMapping("/depts/{id}")
+	//@GetMapping("/{id}")
 	//public Result getInfo(@PathVariable("id") Integer deptId) {
 	//	System.out.println("根据Id查询部门：" + deptId);
 	//	return Result.success();
 	//}
 
 
-	@GetMapping("/depts/{id}")
+	@GetMapping("/{id}")
 	public Result getInfo(@PathVariable Integer id) {
 		System.out.println("根据Id查询部门：" + id);
 		Dept dept = deptService.getInfoById(id);
@@ -109,7 +110,7 @@ public class DeptController {
 	/**
 	 * 修改部门
 	 */
-	@PutMapping("/depts")
+	@PutMapping
 	public Result update(@RequestBody Dept dept) {
 		System.out.println("修改部门：" + dept);
 		deptService.update(dept);
