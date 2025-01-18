@@ -25,6 +25,9 @@ public class LogTest {
 
 		//System.out.println(LocalDateTime.now() + "结束计算...");
 		log.debug(LocalDateTime.now() + "结束计算...");
+
+		log.warn("测试log warn");
+		log.error("测试log error");
 	}
 
 }

@@ -4,6 +4,9 @@ import com.itheima.pojo.Dept;
 import com.itheima.pojo.Result;
 import com.itheima.service.DeptService;
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,9 +20,15 @@ import java.util.List;
  * @Controller：将控制层的类也交给IOC容器管理
  * @ResponseBody：标识当前方法的返回值，直接作为响应体返回给浏览器；如果返回值是一个对象，则默认转换为json格式返回；
  */
+@Slf4j
 @RequestMapping("/depts")
 @RestController
 public class DeptController {
+	/*
+	 * 如果类名上增加了注解@Slf4j，则会自动生成一个日志对象，可以直接使用；如果不加，则需要手动创建一个日志对象，代码如下：
+	 * private static final Logger logger = LoggerFactory.getLogger(DeptController.class);
+	 */
+
 	@Autowired        // Controller层需要调用Service层，则依赖注入service；应用程序运行时，会自动的查询该类型的bean对象，并赋值给该成员变量
 	private DeptService deptService;
 
@@ -28,7 +37,7 @@ public class DeptController {
 	 */
 	@GetMapping    //	@RequestMapping(value = "/depts", method = RequestMethod.GET)
 	public Result list() {
-		System.out.println("查询全部部门");
+		log.info("查询全部部门");    //System.out.println("查询全部部门");
 		List<Dept> deptList = deptService.findAll();
 		return Result.success(deptList);
 	}
@@ -68,7 +77,7 @@ public class DeptController {
 	 */
 	@DeleteMapping
 	public Result delete(Integer id) {
-		System.out.println("根据Id删除部门===>" + id);
+		log.info("根据Id删除部门===>{}", id);    // System.out.println("根据Id删除部门===>" + id);
 		deptService.deleteById(id);
 		return Result.success();
 	}
@@ -80,7 +89,7 @@ public class DeptController {
 	 */
 	@PostMapping
 	public Result add(@RequestBody Dept dept) {
-		System.out.println("新增部门：" + dept);
+		log.info("新增部门--->{}", dept);    // System.out.println("新增部门：" + dept);
 		// Step2:调用Service层新增部门
 		deptService.add(dept);
 		return Result.success();
@@ -100,7 +109,7 @@ public class DeptController {
 
 	@GetMapping("/{id}")
 	public Result getInfo(@PathVariable Integer id) {
-		System.out.println("根据Id查询部门：" + id);
+		log.info("根据Id查询部门***>{}", id);    // System.out.println("根据Id查询部门：" + id);
 		Dept dept = deptService.getInfoById(id);
 		return Result.success(dept);
 	}
@@ -112,7 +121,7 @@ public class DeptController {
 	 */
 	@PutMapping
 	public Result update(@RequestBody Dept dept) {
-		System.out.println("修改部门：" + dept);
+		log.info("修改部门###>{}", dept);    // System.out.println("修改部门：" + dept);
 		deptService.update(dept);
 		return Result.success();
 	}
