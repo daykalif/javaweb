@@ -19,4 +19,9 @@ public interface DeptService {
 	 * Step3：新增部门-接口层
 	 */
 	void add(Dept dept);
+
+	/**
+	 * 根据id查询部门信息
+	 */
+	Dept getInfoById(Integer id);
 }

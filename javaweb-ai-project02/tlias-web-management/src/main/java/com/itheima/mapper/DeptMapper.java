@@ -49,4 +49,12 @@ public interface DeptMapper {
 	 */
 	@Insert("insert into dept(name, create_time, update_time) values(#{name}, #{createTime}, #{updateTime})")
 	void add(Dept dept);
+
+	//===============================================================================================================
+
+	/*
+	 * 根据id查询部门信息
+	 */
+	@Select("select id, name, create_time, update_time from dept where id = #{id}")
+	Dept getMapperById(Integer id);
 }
