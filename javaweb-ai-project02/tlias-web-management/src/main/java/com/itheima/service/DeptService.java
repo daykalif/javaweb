@@ -14,4 +14,9 @@ public interface DeptService {
 	 * 根据id删除部门
 	 */
 	void deleteById(Integer id);
+
+	/**
+	 * Step3：新增部门-接口层
+	 */
+	void add(Dept dept);
 }
