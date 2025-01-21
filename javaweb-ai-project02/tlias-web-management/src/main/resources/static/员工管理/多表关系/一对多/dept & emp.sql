@@ -97,12 +97,9 @@ VALUES (1, 'shinaian', '123456', '施耐庵', 1, '13309090001', 4, 15000, '5.png
         '2023-10-20 20:44:54', '2023-11-09 09:41:04');
 
 
-
-
 -- 添加外键约束（emp的 dept_id ---关联---> dept的主键id）
 alter table emp
     add constraint fk_emp_dept_id
         foreign key (dept_id)
             references dept (id);
-
 
