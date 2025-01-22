@@ -126,15 +126,3 @@ VALUES (1, 'shinaian', '123456', '施耐庵', 1, '13309090001', 4, 15000,
        (30, 'liyun', '123456', '李云', 1, '13309090030', NULL, NULL,
         'https://dawn-itcast.oss-cn-hangzhou.aliyuncs.com/01.png', '2020-03-01', NULL, '2024-10-27 16:35:33',
         '2024-10-27 16:36:31');
-
-
--- 查询（笛卡尔积）
-select *
-from emp,
-     dept;
-
--- 查询内连接（消除无效的笛卡尔积）
-select *
-from emp,
-     dept
-where emp.dept_id = dept.id;
