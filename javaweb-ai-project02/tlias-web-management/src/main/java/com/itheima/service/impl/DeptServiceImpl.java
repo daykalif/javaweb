@@ -18,7 +18,7 @@ import java.util.List;
  * 		- @Repository
  * 		- @Component
  */
-@Service
+@Service    // 声明为Spring IOC容器的bean
 public class DeptServiceImpl implements DeptService {
 	@Autowired
 	private DeptMapper deptMapper;
