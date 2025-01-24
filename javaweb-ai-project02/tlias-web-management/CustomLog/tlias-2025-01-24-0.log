@@ -320,3 +320,6 @@ com.itheima.controller.EmpController#list(Integer, Integer) mapped.
 2025-01-24 15:52:17.071 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=2010-02-01, end=2010-02-26)
 2025-01-24 15:52:23.502 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=2017-03-22, end=2018-04-03)
 2025-01-24 15:52:25.804 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-24 16:11:29.684 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m50s364ms).
+2025-01-24 16:28:21.870 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m52s177ms).
+2025-01-24 16:36:08.583 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m46s654ms).
