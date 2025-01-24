@@ -4,6 +4,7 @@ import com.itheima.pojo.Emp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -24,9 +25,14 @@ public interface EmpMapper {
 	public List<Emp> list(Integer start, Integer pageSize);
 
 
-	/**
+	/*
 	 * 分页查询-PageHelper
+	 *
+	 * select查询语句
+	 * 	方式一：@Select("select e.*, d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc")
+	 * 	方式二：使用mapper.xml文件，在mapper.xml文件中定义SQL语句，再通过SQLSession对象执行SQL语句；
 	 */
-	@Select("select e.*, d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc")	// 注意事项：定义的SQL语句结尾不能加分号；
-	public List<Emp> pageHelperList();
+
+	// 注意事项：定义的SQL语句结尾不能加分号；
+	public List<Emp> pageHelperList(String name, Integer gender, LocalDate begin, LocalDate end);
 }

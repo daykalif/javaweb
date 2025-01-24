@@ -15,20 +15,17 @@ from emp e
 -- 查询第1页数据，每页展示5条
 select e.*, d.name
 from emp e
-         left join dept d on e.dept_id = d.id
-    limit 0, 5;
+         left join dept d on e.dept_id = d.id limit 0, 5;
 
 -- 查询第2页数据，每页展示5条
 select e.*, d.name
 from emp e
-         left join dept d on e.dept_id = d.id
-    limit 5, 5;
+         left join dept d on e.dept_id = d.id limit 5, 5;
 
 -- 查询第3页数据，每页展示5条
 select e.*, d.name
 from emp e
-         left join dept d on e.dept_id = d.id
-    limit 10, 5;
+         left join dept d on e.dept_id = d.id limit 10, 5;
 
 -- 查询总记录数
 select count(*)
@@ -36,5 +33,12 @@ from emp e
          left join dept d on e.dept_id = d.id;
 
 
--- --------------------------------------PageHelper分页插件--------------------------------------
+-- -------------------------------------- 条件查询 --------------------------------------
+select e.*, d.name deptName
+from emp e
+         left join dept d on e.dept_id = d.id
+where e.name like '%阮%' # 根据姓名模糊查询
+  and e.gender = 1                                       # 根据性别进行精确查询
+  and e.entry_date between '2010-01-01' and '2020-01-01' # 根据入职日期进行范围查询
+order by e.update_time desc;
 
