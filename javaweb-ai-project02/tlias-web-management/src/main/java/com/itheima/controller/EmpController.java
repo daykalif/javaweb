@@ -1,6 +1,7 @@
 package com.itheima.controller;
 
 import com.itheima.pojo.Emp;
+import com.itheima.pojo.EmpQueryParam;
 import com.itheima.pojo.PageResult;
 import com.itheima.pojo.Result;
 import com.itheima.service.EmpService;
@@ -40,18 +41,26 @@ public class EmpController {
 	/**
 	 * 分页查询-PageHelper插件
 	 */
-	@GetMapping
-	public Result pageHelperList(@RequestParam(defaultValue = "1") Integer page,
-								 @RequestParam(defaultValue = "20") Integer pageSize,
-								 String name,
-								 Integer gender,
-								 @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate begin,
-								 @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate end
+	@GetMapping("/page-header")
+	public Result pageHelperList2(@RequestParam(defaultValue = "1") Integer page,
+								  @RequestParam(defaultValue = "20") Integer pageSize,
+								  String name,
+								  Integer gender,
+								  @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate begin,
+								  @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate end
 	) {
 		log.info("PageHelper---->>>分页查询员工信息，当前页码：{}，每页记录数：{}", page, pageSize);
 		log.info("分页查询员工姓名：{}，员工性别：{}，入职日期：{} - {}", name, gender, begin, end);
 
 		PageResult<Emp> pageResult = empService.pageHelperList(page, pageSize, name, gender, begin, end);
+		return Result.success(pageResult);
+	}
+
+
+	@GetMapping
+	public Result pageQueryParam(EmpQueryParam empQueryParam) {
+		log.info("分页查询=================>>>>>>>: {}", empQueryParam);
+		PageResult<Emp> pageResult = empService.pageQueryParam(empQueryParam);
 		return Result.success(pageResult);
 	}
 }

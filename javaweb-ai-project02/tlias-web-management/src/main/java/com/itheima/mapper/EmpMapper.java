@@ -1,6 +1,7 @@
 package com.itheima.mapper;
 
 import com.itheima.pojo.Emp;
+import com.itheima.pojo.EmpQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -34,5 +35,11 @@ public interface EmpMapper {
 	 */
 
 	// 注意事项：定义的SQL语句结尾不能加分号；
-	public List<Emp> pageHelperList(String name, Integer gender, LocalDate begin, LocalDate end);
+	public List<Emp> pageHelperListMapper(String name, Integer gender, LocalDate begin, LocalDate end);
+
+
+	/**
+	 * 请求参数优化
+	 */
+	public List<Emp> pageQueryParamMapper(EmpQueryParam empQueryParam);
 }

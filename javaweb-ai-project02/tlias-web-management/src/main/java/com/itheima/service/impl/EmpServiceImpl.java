@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.itheima.mapper.EmpMapper;
 import com.itheima.pojo.Emp;
+import com.itheima.pojo.EmpQueryParam;
 import com.itheima.pojo.PageResult;
 import com.itheima.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,13 +48,27 @@ public class EmpServiceImpl implements EmpService {
 		PageHelper.startPage(page, pageSize);
 
 		// 2.执行查询
-		List<Emp> empList = empMapper.pageHelperList(name, gender, begin, end);    // 能用List接收是因为PageHelper插件会自动将查询结果封装成Page对象，而Page是ArrayList的子类，ArrayList实现了List接口；因此，List也可接收。
-		// List<Emp> empList2 = empMapper.pageHelperList();    // 注意事项：PageHelper仅仅能对紧跟在其后的第一个查询语句进行分页处理
+		List<Emp> empList = empMapper.pageHelperListMapper(name, gender, begin, end);    // 能用List接收是因为PageHelper插件会自动将查询结果封装成Page对象，而Page是ArrayList的子类，ArrayList实现了List接口；因此，List也可接收。
+		// List<Emp> empList2 = empMapper.pageHelperListMapper();    // 注意事项：PageHelper仅仅能对紧跟在其后的第一个查询语句进行分页处理
 
 		// 3.解析查询结果，并封装数据
 		Page<Emp> p = (Page<Emp>) empList;
 		Long total = p.getTotal();
 
 		return new PageResult<Emp>(total, empList);
+	}
+
+
+	@Override
+	public PageResult<Emp> pageQueryParam(EmpQueryParam empQueryParam) {
+		//1. 设置分页参数(PageHelper)
+		PageHelper.startPage(empQueryParam.getPage(), empQueryParam.getPageSize());
+
+		//2. 执行查询
+		List<Emp> empList = empMapper.pageQueryParamMapper(empQueryParam);
+
+		//3. 解析查询结果, 并封装
+		Page<Emp> p = (Page<Emp>) empList;
+		return new PageResult<Emp>(p.getTotal(), p.getResult());
 	}
 }
