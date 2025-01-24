@@ -22,13 +22,25 @@ public class EmpController {
 	private EmpService empService;
 
 	/**
-	 * 分页查询
+	 * 分页查询-原始方式
 	 */
 	@GetMapping
 	public Result list(@RequestParam(defaultValue = "1") Integer page,
 					   @RequestParam(defaultValue = "10") Integer pageSize) {
 		log.info("分页查询员工信息，当前页码：{}，每页记录数：{}", page, pageSize);
 		PageResult<Emp> pageResult = empService.page(page, pageSize);
+		return Result.success(pageResult);
+	}
+
+
+	/**
+	 * 分页查询-PageHelper插件
+	 */
+	@GetMapping("/page-helper")
+	public Result pageHelperList(@RequestParam(defaultValue = "1") Integer page,
+								 @RequestParam(defaultValue = "20") Integer pageSize) {
+		log.info("PageHelper---->>>分页查询员工信息，当前页码：{}，每页记录数：{}", page, pageSize);
+		PageResult<Emp> pageResult = empService.pageHelperList(page, pageSize);
 		return Result.success(pageResult);
 	}
 }
