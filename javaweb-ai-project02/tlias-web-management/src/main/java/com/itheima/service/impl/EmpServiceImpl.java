@@ -2,13 +2,16 @@ package com.itheima.service.impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.itheima.mapper.EmpExprMapper;
 import com.itheima.mapper.EmpMapper;
 import com.itheima.pojo.Emp;
+import com.itheima.pojo.EmpExpr;
 import com.itheima.pojo.EmpQueryParam;
 import com.itheima.pojo.PageResult;
 import com.itheima.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -18,6 +21,9 @@ import java.util.List;
 public class EmpServiceImpl implements EmpService {
 	@Autowired
 	private EmpMapper empMapper;
+
+	@Autowired
+	private EmpExprMapper empExprMapper;
 
 	/*
 	 * 分页查询-原始方式
@@ -84,5 +90,17 @@ public class EmpServiceImpl implements EmpService {
 		empMapper.insert(emp);
 
 		//	2.保存员工工作经历信息
+		List<EmpExpr> exprList = emp.getExprList();
+		if (!CollectionUtils.isEmpty(exprList)) {
+			// 遍历集合, 为empId赋值
+			exprList.forEach(empExpr -> {
+				/*
+				 * emp.getId()：要想获取到刚刚插入的empId，需要对刚刚 empMapper.insert(emp) 的insert方法增加一个注解，@Options(useGeneratedKeys = true, keyProperty = "id")
+				 * empExpr.setEmpId：获取到刚刚插入的empId，并赋值给empExpr表的emp_id属性
+				 */
+				empExpr.setEmpId(emp.getId());
+			});
+			empExprMapper.insertBatch(exprList);
+		}
 	}
 }
