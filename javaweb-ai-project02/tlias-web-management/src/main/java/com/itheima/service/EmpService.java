@@ -8,9 +8,23 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.time.LocalDate;
 
 public interface EmpService {
+	/**
+	 * 分页查询-原始方法
+	 */
 	PageResult<Emp> page(Integer page, Integer pageSize);
 
+	/**
+	 * 分页查询-mybatis-plus：PageHelper插件
+	 */
 	PageResult<Emp> pageHelperList(Integer page, Integer pageSize, String name, Integer gender, LocalDate begin, LocalDate end);
 
+	/**
+	 * 分页查询-条件查询
+	 */
 	PageResult<Emp> pageQueryParam(EmpQueryParam empQueryParam);
+
+	/**
+	 * 新增员工信息
+	 */
+	void save(Emp emp);
 }
