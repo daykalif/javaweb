@@ -834,3 +834,277 @@ Caused by: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lm
 2025-01-26 15:23:55.547 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
 2025-01-26 15:23:55.558 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
 2025-01-26 15:23:55.564 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.755 seconds (process running for 0.999)
+2025-01-26 15:28:37.988 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-26 15:28:37.997 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-26 15:28:39.519 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 5438 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-26 15:28:39.520 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-26 15:28:39.845 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-26 15:28:39.850 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:28:39.850 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-26 15:28:39.850 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-26 15:28:39.867 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-26 15:28:39.867 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 334 ms
+2025-01-26 15:28:40.144 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:28:40.162 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-26 15:28:40.171 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.784 seconds (process running for 1.022)
+2025-01-26 15:28:47.412 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-26 15:28:47.413 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-26 15:28:47.413 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-26 15:28:59.045 [http-nio-8080-exec-2] INFO  com.itheima.controller.UploadController-接收参数: zhangsan,24,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@a452a3e
+2025-01-26 15:28:59.052 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.IOException: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lmt39dxfxfbm0000gn/T/tomcat.8080.5431283024814938970/work/Tomcat/localhost/ROOT/CustomLog/images/7a11bc10-15c3-42fc-90d1-6d26bde40d11.jpg (No such file or directory)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269)
+	at com.itheima.controller.UploadController.upload(UploadController.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lmt39dxfxfbm0000gn/T/tomcat.8080.5431283024814938970/work/Tomcat/localhost/ROOT/CustomLog/images/7a11bc10-15c3-42fc-90d1-6d26bde40d11.jpg (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:405)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117)
+	... 52 common frames omitted
+2025-01-26 15:33:34.462 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-26 15:33:34.469 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-26 15:33:35.990 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 5562 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-26 15:33:35.991 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-26 15:33:36.321 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-26 15:33:36.326 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:33:36.328 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-26 15:33:36.328 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-26 15:33:36.346 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-26 15:33:36.346 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 342 ms
+2025-01-26 15:33:36.592 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:33:36.601 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-26 15:33:36.607 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.751 seconds (process running for 0.994)
+2025-01-26 15:33:41.950 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-26 15:33:41.951 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-26 15:33:41.952 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-26 15:33:41.986 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-接收参数: zhangsan,24,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2f09aefb
+2025-01-26 15:33:41.990 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.IOException: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lmt39dxfxfbm0000gn/T/tomcat.8080.6085968193679697515/work/Tomcat/localhost/ROOT/javaweb-ai-project02/tlias-web-management/CustomLog/images/2ee2271a-bf27-4169-b7a3-5e496248a2cf.jpg (No such file or directory)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269)
+	at com.itheima.controller.UploadController.upload(UploadController.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lmt39dxfxfbm0000gn/T/tomcat.8080.6085968193679697515/work/Tomcat/localhost/ROOT/javaweb-ai-project02/tlias-web-management/CustomLog/images/2ee2271a-bf27-4169-b7a3-5e496248a2cf.jpg (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:405)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117)
+	... 52 common frames omitted
+2025-01-26 15:33:57.739 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-26 15:33:57.746 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-26 15:33:59.265 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 5591 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-26 15:33:59.266 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-26 15:33:59.603 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-26 15:33:59.610 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:33:59.614 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-26 15:33:59.618 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-26 15:33:59.637 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-26 15:33:59.640 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 360 ms
+2025-01-26 15:33:59.877 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:33:59.886 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-26 15:33:59.892 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.767 seconds (process running for 1.002)
+2025-01-26 15:34:06.735 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-26 15:34:06.736 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-26 15:34:06.737 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-26 15:34:06.768 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-接收参数: zhangsan,24,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1487e6b1
+2025-01-26 15:35:09.753 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-26 15:35:09.760 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-26 15:35:11.805 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 5640 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-26 15:35:11.805 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-26 15:35:12.134 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-26 15:35:12.139 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:35:12.139 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-26 15:35:12.139 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-26 15:35:12.157 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-26 15:35:12.157 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 338 ms
+2025-01-26 15:35:12.402 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:35:12.411 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-26 15:35:12.417 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.75 seconds (process running for 0.983)
+2025-01-26 15:35:15.972 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-26 15:35:15.972 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-26 15:35:15.973 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-26 15:35:16.008 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-接收参数: zhangsan,24,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@50cce7ab
+2025-01-26 15:35:16.012 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.IOException: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lmt39dxfxfbm0000gn/T/tomcat.8080.3191970666019905146/work/Tomcat/localhost/ROOT/./CustomLog/images/4c7dfea9-4d5a-4934-9c30-8ca37e839786.jpg (No such file or directory)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:269)
+	at com.itheima.controller.UploadController.upload(UploadController.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.io.FileNotFoundException: /private/var/folders/mc/t_4mvhhd6059lmt39dxfxfbm0000gn/T/tomcat.8080.3191970666019905146/work/Tomcat/localhost/ROOT/./CustomLog/images/4c7dfea9-4d5a-4934-9c30-8ca37e839786.jpg (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:405)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117)
+	... 52 common frames omitted
+2025-01-26 15:35:25.978 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-26 15:35:25.985 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-26 15:35:27.541 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 5660 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-26 15:35:27.542 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-26 15:35:27.892 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-26 15:35:27.897 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:35:27.898 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-26 15:35:27.898 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-26 15:35:27.916 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-26 15:35:27.916 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 358 ms
+2025-01-26 15:35:28.167 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-26 15:35:28.177 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-26 15:35:28.183 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.783 seconds (process running for 1.031)
+2025-01-26 15:43:22.098 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-26 15:43:22.098 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-26 15:43:22.099 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-26 15:43:22.124 [http-nio-8080-exec-2] INFO  com.itheima.controller.UploadController-接收参数: null,null,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@6b30686a
