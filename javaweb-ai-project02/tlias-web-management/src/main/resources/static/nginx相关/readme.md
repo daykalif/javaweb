@@ -7,7 +7,7 @@ nginx日志：/opt/homebrew/var/log/nginx
 重新加载nginx配置文件：nginx -s reload
 停止nginx：sudo nginx -s stop
 启动nginx：sudo nginx
-运行nginx：open /opt/homebrew/bin/nginx
+【重启电脑后运行这行】运行nginx：open /opt/homebrew/bin/nginx
 
 tomcat安装地址：cd /opt/homebrew/etc/tomcat@9
 
