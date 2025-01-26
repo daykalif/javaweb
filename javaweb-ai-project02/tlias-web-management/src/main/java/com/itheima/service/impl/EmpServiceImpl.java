@@ -4,10 +4,8 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.itheima.mapper.EmpExprMapper;
 import com.itheima.mapper.EmpMapper;
-import com.itheima.pojo.Emp;
-import com.itheima.pojo.EmpExpr;
-import com.itheima.pojo.EmpQueryParam;
-import com.itheima.pojo.PageResult;
+import com.itheima.pojo.*;
+import com.itheima.service.EmpLogService;
 import com.itheima.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,6 +23,9 @@ public class EmpServiceImpl implements EmpService {
 
 	@Autowired
 	private EmpExprMapper empExprMapper;
+
+	@Autowired
+	private EmpLogService empLogService;
 
 	/*
 	 * 分页查询-原始方式
@@ -92,29 +93,36 @@ public class EmpServiceImpl implements EmpService {
 	@Transactional(rollbackFor = {Exception.class})
 	@Override
 	public void save(Emp emp) throws Exception {
-		//	1.保存员工的基本信息
-		emp.setCreateTime(LocalDateTime.now());
-		emp.setUpdateTime(LocalDateTime.now());
-		empMapper.insert(emp);
+		try {    // try...catch...finally 快捷键：option + command + T
+			//	1.保存员工的基本信息
+			emp.setCreateTime(LocalDateTime.now());
+			emp.setUpdateTime(LocalDateTime.now());
+			empMapper.insert(emp);
 
-		//int i = 1 / 0;
+			//int i = 1 / 0;
 
-		if (true) {
-			throw new Exception("保存员工信息失败");
-		}
+			/*
+			 * if (true) {
+			 * 		throw new Exception("保存员工信息失败");
+			 * }
+			 */
 
-		//	2.保存员工工作经历信息
-		List<EmpExpr> exprList = emp.getExprList();
-		if (!CollectionUtils.isEmpty(exprList)) {
-			// 遍历集合, 为empId赋值
-			exprList.forEach(empExpr -> {
-				/*
-				 * emp.getId()：要想获取到刚刚插入的empId，需要对刚刚 empMapper.insert(emp) 的insert方法增加一个注解，@Options(useGeneratedKeys = true, keyProperty = "id")
-				 * empExpr.setEmpId：获取到刚刚插入的empId，并赋值给empExpr表的emp_id属性
-				 */
-				empExpr.setEmpId(emp.getId());
-			});
-			empExprMapper.insertBatch(exprList);
+			//	2.保存员工工作经历信息
+			List<EmpExpr> exprList = emp.getExprList();
+			if (!CollectionUtils.isEmpty(exprList)) {
+				// 遍历集合, 为empId赋值
+				exprList.forEach(empExpr -> {
+					/*
+					 * emp.getId()：要想获取到刚刚插入的empId，需要对刚刚 empMapper.insert(emp) 的insert方法增加一个注解，@Options(useGeneratedKeys = true, keyProperty = "id")
+					 * empExpr.setEmpId：获取到刚刚插入的empId，并赋值给empExpr表的emp_id属性
+					 */
+					empExpr.setEmpId(emp.getId());
+				});
+				empExprMapper.insertBatch(exprList);
+			}
+		} finally {
+			//	3.记录操作日志
+			empLogService.insertLog(new EmpLog(null, LocalDateTime.now(), "新增员工======》》》》：" + emp));
 		}
 	}
 }
