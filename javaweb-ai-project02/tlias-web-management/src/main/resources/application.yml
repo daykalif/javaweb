@@ -15,3 +15,9 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     # 方式三：开启驼峰命名，如果字段名与属性名符合驼峰命名规则，则mybatis会自动通过驼峰命名规则映射。
     map-underscore-to-camel-case: true
+
+
+#配置事务管理日志级别
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
