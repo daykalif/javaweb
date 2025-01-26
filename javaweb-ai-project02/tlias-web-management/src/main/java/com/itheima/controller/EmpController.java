@@ -67,7 +67,7 @@ public class EmpController {
 	 * 新增员工
 	 */
 	@PostMapping
-	public Result save(@RequestBody Emp emp) {    // json数据要想转换成java对象，需要使用@RequestBody注解
+	public Result save(@RequestBody Emp emp) throws Exception {    // json数据要想转换成java对象，需要使用@RequestBody注解
 		log.info("新增员工：{}", emp);
 		empService.save(emp);
 		return Result.success();

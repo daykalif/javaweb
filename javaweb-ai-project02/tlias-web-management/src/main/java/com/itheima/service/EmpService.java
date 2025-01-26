@@ -26,5 +26,5 @@ public interface EmpService {
 	/**
 	 * 新增员工信息
 	 */
-	void save(Emp emp);
+	void save(Emp emp) throws Exception;
 }

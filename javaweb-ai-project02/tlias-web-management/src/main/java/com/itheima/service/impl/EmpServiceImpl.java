@@ -82,15 +82,26 @@ public class EmpServiceImpl implements EmpService {
 
 
 	//-----------------------------------------------------------------------------------------------------------------------------------------------------------
-	@Transactional    // 事务管理注解：将当前方法交给spring进行事务管理，方法执行前，开启事务；成功执行完毕，提交事务；出现异常，事务回滚
+
+	/*
+	 * @Transactional
+	 * 		事务管理注解：将当前方法交给spring进行事务管理，方法执行前，开启事务；成功执行完毕，提交事务；出现异常，事务回滚
+	 * 		默认出现运行时异常，即RuntimeException才会回滚
+	 * 		增加属性rollbackFor，用于控制出现何种异常类型时进行事务回滚；Exception.class表示所有异常都会进行回滚
+	 */
+	@Transactional(rollbackFor = {Exception.class})
 	@Override
-	public void save(Emp emp) {
+	public void save(Emp emp) throws Exception {
 		//	1.保存员工的基本信息
 		emp.setCreateTime(LocalDateTime.now());
 		emp.setUpdateTime(LocalDateTime.now());
 		empMapper.insert(emp);
 
 		//int i = 1 / 0;
+
+		if (true) {
+			throw new Exception("保存员工信息失败");
+		}
 
 		//	2.保存员工工作经历信息
 		List<EmpExpr> exprList = emp.getExprList();
