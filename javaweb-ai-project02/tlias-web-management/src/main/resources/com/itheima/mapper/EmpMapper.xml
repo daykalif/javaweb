@@ -31,4 +31,12 @@
         order by e.update_time desc
     </select>
 
+
+    <!--批量删除员工基本信息 (1,2,3)-->
+    <delete id="deleteByIds">
+        delete from emp where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>

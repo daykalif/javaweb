@@ -16,4 +16,10 @@ public interface EmpExprMapper {
 	 * sql语句记录在 "/src/main/resources/com/itheima/mapper/EmpExprMapper.xml" 中
 	 */
 	void insertBatch(List<EmpExpr> exprList);
+
+
+	/**
+	 * 根据员工id集合删除员工工作经历信息
+	 */
+	void deleteByEmpIds(List<Integer> empIds);
 }

@@ -125,4 +125,26 @@ public class EmpServiceImpl implements EmpService {
 			empLogService.insertLog(new EmpLog(null, LocalDateTime.now(), "新增员工======》》》》：" + emp));
 		}
 	}
+
+	//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	/*
+	 * 批量删除员工
+	 *
+	 * @Transactional注解：
+	 * 		一个业务中需要操作多次数据库，多次操作要么同时成功，要么同时失败；
+	 * 		因此，需要使用事务注解，保证操作要么成功，要么失败；
+	 * 		@Transactional(rollbackFor = {Exception.class})
+	 * 		Exception.class表示所有异常都会进行回滚；
+	 * 		如果不加rollbackFor，默认只对运行时异常进行回滚，即RuntimeException；
+	 */
+	@Transactional(rollbackFor = {Exception.class})
+	@Override
+	public void delete(List<Integer> ids) {
+		//1. 批量删除员工基本信息
+		empMapper.deleteByIds(ids);
+
+		//2. 批量删除员工的工作经历信息
+		empExprMapper.deleteByEmpIds(ids);
+	}
 }
