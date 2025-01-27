@@ -14,6 +14,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -151,11 +152,46 @@ public class EmpServiceImpl implements EmpService {
 
 	//-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	/**
+	/*
 	 * 根据员工id查询员工信息
 	 */
 	@Override
 	public Emp getInfo(Integer id_service_impl) {
 		return empMapper.getById(id_service_impl);
+	}
+
+
+	//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	/*
+	 * 修改员工信息
+	 *
+	 * 这段sql进行了3次数据库操作：
+	 * 		第一次：根据ID修改员工的基本信息
+	 * 		第二次：根据ID删除该员工所有的工作经历
+	 * 		第三次：根据ID批量保存该员工新的工作经历
+	 *
+	 * 因此，需要增加@Transactional注解，保证事务管理，保证数据操作要么成功，要么失败。
+	 *
+	 * @Transactional(rollbackFor = {Exception.class})
+	 * @Transactional(rollbackFor = Exception.class)		如果花括号里面只有一个元素，花括号也可以省略
+	 */
+	@Transactional(rollbackFor = Exception.class)
+	@Override
+	public void update(Emp emp) {
+		//1. 根据ID修改员工的基本信息
+		emp.setUpdateTime(LocalDateTime.now());    // 更新时间为当前系统时间
+		empMapper.updateById(emp);
+
+		//2. 根据ID修改员工的工作经历信息
+		//2.1 先根据员工ID删除原有的工作经历
+		empExprMapper.deleteByEmpIds(Arrays.asList(emp.getId()));    // 通过Arrays.asList(emp.getId())，将一个员工的id封装到一个List集合
+
+		//2.2 再添加这个员工新的工作经历
+		List<EmpExpr> exprList = emp.getExprList();
+		if (!CollectionUtils.isEmpty(exprList)) {
+			exprList.forEach(empExpr -> empExpr.setEmpId(emp.getId()));    // 为每个empExpr对象设置empId属性，记录这段工作经历归属的员工id
+			empExprMapper.insertBatch(exprList);    // 调用sql保存到数据库
+		}
 	}
 }

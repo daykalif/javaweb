@@ -40,4 +40,10 @@ public interface EmpService {
 	 * 根据ID查询员工
 	 */
 	Emp getInfo(Integer id_service);
+
+
+	/**
+	 * 修改员工
+	 */
+	void update(Emp emp);
 }

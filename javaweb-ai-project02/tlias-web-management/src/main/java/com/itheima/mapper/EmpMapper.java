@@ -73,4 +73,10 @@ public interface EmpMapper {
 	 * 由于查询id的sql语句较长，所以，这里使用mapper.xml文件定义SQL语句，再通过SQLSession对象执行SQL语句；
 	 */
 	Emp getById(Integer id_mapper);
+
+
+	/*
+	 * 根据ID更新员工基本信息
+	 */
+	void updateById(Emp emp);
 }
