@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>上传文件</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('uploadForm');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // 阻止表单默认提交行为
+
+        const formData = new FormData(form);
+
+        fetch('http://localhost:8080/upload', {
+          method: 'POST',
+          body: formData
+        })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Success:', data);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+      });
+    });
+  </script>
+</head>
+<body>
+
+<!-- 如果不设置enctype="multipart/form-data"，提交文件的时候提交的会是文件名称 -->
+<form id="uploadForm" method="post" enctype="multipart/form-data">
+  姓名: <input type="text" name="name"><br>
+  年龄: <input type="text" name="age"><br>
+  头像: <input type="file" name="file"><br>
+  <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
