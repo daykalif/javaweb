@@ -1,0 +1,555 @@
+2025-01-27 00:55:40.569 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 13484 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 00:55:40.570 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 00:55:40.983 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 00:55:40.988 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 00:55:40.989 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 00:55:40.989 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 00:55:41.013 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 00:55:41.013 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 429 ms
+2025-01-27 00:55:41.306 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 00:55:41.315 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 00:55:41.320 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.915 seconds (process running for 1.138)
+2025-01-27 00:55:48.608 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 00:55:48.608 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 00:55:48.609 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 00:55:48.622 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 00:55:48.632 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 00:55:48.634 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 00:55:48.812 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37a4a1e5
+2025-01-27 00:55:48.813 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 00:57:53.412 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 00:57:53.417 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 00:57:53.419 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 00:57:53.422 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:01:11.240 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 14263 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:01:11.241 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:01:11.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:01:11.678 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:01:11.679 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:01:11.679 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:01:11.705 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:01:11.705 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 446 ms
+2025-01-27 01:01:12.007 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:01:12.019 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:01:12.024 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.954 seconds (process running for 1.173)
+2025-01-27 01:01:16.533 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:01:16.533 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:01:16.534 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:01:16.547 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:01:16.555 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:01:16.560 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:01:16.719 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ac843a0
+2025-01-27 01:01:16.720 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:01:40.729 [http-nio-8080-exec-3] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-01-27 01:03:21.714 [http-nio-8080-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-01-27 01:03:31.908 [http-nio-8080-exec-6] INFO  com.itheima.controller.UploadController-文件上传: 风光拍摄场景题材及技巧：常见出片时间.png
+2025-01-27 01:03:32.996 [http-nio-8080-exec-6] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/2b6dafe8-91ca-4e92-b67d-b8e5ea574847.png
+2025-01-27 01:04:29.505 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:04:29.507 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:05:33.396 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:05:33.403 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:05:33.406 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:05:33.410 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:05:34.476 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 14392 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:05:34.477 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:05:34.899 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:05:34.904 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:05:34.905 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:05:34.905 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:05:34.932 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:05:34.932 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 437 ms
+2025-01-27 01:05:35.226 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:05:35.235 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:05:35.239 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.928 seconds (process running for 1.148)
+2025-01-27 01:05:37.780 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:05:37.781 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:05:37.781 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-27 01:05:37.796 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:05:37.805 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:05:37.807 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:05:37.968 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e129119
+2025-01-27 01:05:37.969 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:05:58.650 [http-nio-8080-exec-4] INFO  com.itheima.controller.UploadController-文件上传: 风光拍摄场景题材及技巧：常见出片时间.png
+2025-01-27 01:05:59.708 [http-nio-8080-exec-4] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/de4428d5-30dd-4dfc-9bf3-6c20e70b38a3.png
+2025-01-27 01:06:41.328 [http-nio-8080-exec-5] INFO  com.itheima.controller.UploadController-文件上传: 风光拍摄场景题材及技巧：常见出片时间.png
+2025-01-27 01:06:42.194 [http-nio-8080-exec-5] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/631a0a3a-0249-4f1c-98d5-5c34ae8155b2.png
+2025-01-27 01:08:11.385 [http-nio-8080-exec-8] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:08:11.386 [http-nio-8080-exec-7] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:11:30.389 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:11:30.395 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:11:30.397 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:11:30.400 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:11:31.472 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 14561 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:11:31.473 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:11:31.893 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:11:31.898 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:11:31.899 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:11:31.899 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:11:31.928 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:11:31.928 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 438 ms
+2025-01-27 01:11:32.233 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:11:32.243 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:11:32.248 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.934 seconds (process running for 1.148)
+2025-01-27 01:11:35.239 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:11:35.239 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:11:35.240 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-27 01:11:35.254 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:11:35.263 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:11:35.265 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:11:35.428 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d7caa2e
+2025-01-27 01:11:35.429 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:13:46.244 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:13:46.247 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:15:11.623 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:15:11.629 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:15:11.632 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:15:11.639 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:15:33.330 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 14992 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:15:33.332 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:15:33.739 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:15:33.745 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:15:33.745 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:15:33.746 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:15:33.772 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:15:33.773 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 425 ms
+2025-01-27 01:15:34.079 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:15:34.089 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:15:34.093 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.923 seconds (process running for 1.144)
+2025-01-27 01:15:37.503 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:15:37.503 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:15:37.504 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:15:37.539 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传: A、AV-光圈优先.png
+2025-01-27 01:15:38.863 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/8d1949d5-68f5-4804-a9a9-ee7cbbc9327b.png
+2025-01-27 01:15:49.804 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:15:49.809 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:25:49.371 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15099 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:25:49.372 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:25:49.776 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:25:49.781 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:25:49.782 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:25:49.782 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:25:49.806 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:25:49.806 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 416 ms
+2025-01-27 01:25:50.108 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:25:50.119 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:25:50.123 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.923 seconds (process running for 1.136)
+2025-01-27 01:25:56.289 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:25:56.289 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:25:56.290 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:25:56.312 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:25:56.352 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:25:56.544 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6460d0f3
+2025-01-27 01:25:56.545 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:26:01.281 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:26:28.968 [http-nio-8080-exec-6] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:26:41.744 [http-nio-8080-exec-10] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:27:03.283 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:27:03.289 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:27:03.291 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:27:03.295 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:27:04.877 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15152 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:27:04.878 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:27:05.285 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:27:05.290 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:27:05.291 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:27:05.291 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:27:05.316 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:27:05.316 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 422 ms
+2025-01-27 01:27:05.601 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:27:05.610 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:27:05.615 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.9 seconds (process running for 1.12)
+2025-01-27 01:27:07.946 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:27:07.946 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:27:07.947 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:27:07.967 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:27:08.007 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:27:08.174 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f6371a5
+2025-01-27 01:27:08.175 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:27:10.688 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:27:40.572 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:27:40.576 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:27:40.579 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:27:40.582 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:27:42.071 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15170 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:27:42.072 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:27:42.479 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:27:42.485 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:27:42.486 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:27:42.486 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:27:42.510 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:27:42.510 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 422 ms
+2025-01-27 01:27:42.794 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:27:42.804 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:27:42.810 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.899 seconds (process running for 1.111)
+2025-01-27 01:27:45.008 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:27:45.008 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:27:45.009 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:27:45.028 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:27:45.070 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:27:45.224 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67546842
+2025-01-27 01:27:45.225 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:30:02.507 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:30:02.513 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:30:02.515 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:30:02.519 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:30:04.062 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15251 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:30:04.063 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:30:04.475 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:30:04.480 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:30:04.481 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:30:04.481 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:30:04.505 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:30:04.506 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 426 ms
+2025-01-27 01:30:04.788 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:30:04.797 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:30:04.802 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.899 seconds (process running for 1.112)
+2025-01-27 01:30:08.279 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:30:08.279 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:30:08.280 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:30:08.293 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:30:08.302 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:30:08.302 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:30:08.471 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b3f38bd
+2025-01-27 01:30:08.472 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:31:08.913 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:31:08.919 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:31:08.922 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:31:08.925 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:31:10.388 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15287 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:31:10.389 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:31:10.800 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:31:10.805 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:31:10.806 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:31:10.806 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:31:10.833 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:31:10.833 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 428 ms
+2025-01-27 01:31:11.135 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:31:11.145 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:31:11.150 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.926 seconds (process running for 1.133)
+2025-01-27 01:31:12.978 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:31:12.978 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:31:12.979 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 01:31:12.991 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:31:13.001 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:31:13.001 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:31:13.172 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3482c03b
+2025-01-27 01:31:13.175 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:31:14.833 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:31:15.447 [http-nio-8080-exec-5] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:31:15.448 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:32:45.210 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:32:45.216 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:32:45.219 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:32:45.221 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:32:46.707 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15352 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:32:46.708 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:32:47.128 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:32:47.133 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:32:47.134 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:32:47.134 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:32:47.160 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:32:47.163 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 439 ms
+2025-01-27 01:32:47.450 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:32:47.459 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:32:47.464 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.915 seconds (process running for 1.126)
+2025-01-27 01:32:51.572 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:32:51.573 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:32:51.573 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-27 01:32:51.587 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:32:51.596 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:32:51.596 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:32:51.760 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@435058c7
+2025-01-27 01:32:51.761 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:33:27.135 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-新增员工：Emp(id=null, username=11, password=null, name=22, gender=1, phone=12323232323, job=null, salary=null, image=, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=[])
+2025-01-27 01:33:27.142 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.itheima.service.impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-01-27 01:33:27.143 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1041669333 wrapping com.mysql.cj.jdbc.ConnectionImpl@435058c7] for JDBC transaction
+2025-01-27 01:33:27.144 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1041669333 wrapping com.mysql.cj.jdbc.ConnectionImpl@435058c7] to manual commit
+2025-01-27 01:33:27.152 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.itheima.service.impl.EmpLogServiceImpl.insertLog]
+2025-01-27 01:33:27.153 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@802666691 wrapping com.mysql.cj.jdbc.ConnectionImpl@1dce9f13] for JDBC transaction
+2025-01-27 01:33:27.153 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@802666691 wrapping com.mysql.cj.jdbc.ConnectionImpl@1dce9f13] to manual commit
+2025-01-27 01:33:27.156 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-01-27 01:33:27.156 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@802666691 wrapping com.mysql.cj.jdbc.ConnectionImpl@1dce9f13]
+2025-01-27 01:33:27.157 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@802666691 wrapping com.mysql.cj.jdbc.ConnectionImpl@1dce9f13] after transaction
+2025-01-27 01:33:27.157 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-01-27 01:33:27.157 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-01-27 01:33:27.157 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1041669333 wrapping com.mysql.cj.jdbc.ConnectionImpl@435058c7]
+2025-01-27 01:33:27.158 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1041669333 wrapping com.mysql.cj.jdbc.ConnectionImpl@435058c7] after transaction
+2025-01-27 01:33:27.167 [http-nio-8080-exec-4] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:35:21.180 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:35:21.186 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:35:21.189 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:35:21.192 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:35:22.772 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15455 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:35:22.773 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:35:23.210 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:35:23.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:35:23.216 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:35:23.216 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:35:23.242 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:35:23.242 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 454 ms
+2025-01-27 01:35:23.525 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:35:23.535 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:35:23.539 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.929 seconds (process running for 1.139)
+2025-01-27 01:35:28.193 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 01:35:28.194 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 01:35:28.194 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-27 01:35:28.208 [http-nio-8080-exec-2] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 01:35:28.217 [http-nio-8080-exec-1] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 01:35:28.219 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 01:35:28.388 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6651476b
+2025-01-27 01:35:28.389 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 01:36:18.717 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:36:18.722 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 01:36:18.725 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 01:36:18.728 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 01:36:19.982 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 15497 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 01:36:19.983 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 01:36:20.397 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 01:36:20.402 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:36:20.403 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 01:36:20.404 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 01:36:20.426 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 01:36:20.427 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 426 ms
+2025-01-27 01:36:20.717 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 01:36:20.727 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 01:36:20.732 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.93 seconds (process running for 1.143)
+2025-01-27 01:36:21.643 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 01:36:21.651 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:34:53.873 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 21974 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:34:53.874 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:34:54.305 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:34:54.310 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:34:54.311 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:34:54.311 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:34:54.338 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:34:54.338 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 446 ms
+2025-01-27 09:34:54.640 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:34:54.651 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:34:54.656 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.948 seconds (process running for 1.201)
+2025-01-27 09:39:15.809 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 09:39:15.809 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 09:39:15.811 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-01-27 09:39:15.823 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 09:39:15.830 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 09:39:15.832 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 09:39:16.009 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f8e417c
+2025-01-27 09:39:16.010 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 09:48:15.919 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:48:15.925 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:48:15.927 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 09:48:15.931 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 09:48:17.506 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22610 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:48:17.507 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:48:17.929 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:48:17.934 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:48:17.935 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:48:17.935 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:48:17.965 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:48:17.965 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 441 ms
+2025-01-27 09:48:18.274 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:48:18.284 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:48:18.290 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.948 seconds (process running for 1.172)
+2025-01-27 09:50:19.728 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:50:19.736 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:50:26.368 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22668 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:50:26.369 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:50:26.785 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:50:26.790 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:50:26.791 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:50:26.791 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:50:26.816 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:50:26.818 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 431 ms
+2025-01-27 09:50:27.110 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:50:27.119 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:50:27.124 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.917 seconds (process running for 1.13)
+2025-01-27 09:51:40.929 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:51:40.937 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:51:47.539 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22709 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:51:47.541 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:51:47.969 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:51:47.974 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:51:47.975 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:51:47.975 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:51:47.999 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:51:47.999 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 441 ms
+2025-01-27 09:51:48.286 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:51:48.296 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:51:48.301 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.931 seconds (process running for 1.146)
+2025-01-27 09:53:05.301 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 09:53:05.301 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 09:53:05.302 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-27 09:53:05.331 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传: WeChat2420f68360f34ef66a69ad0a19259d37.jpg
+2025-01-27 09:53:05.909 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/90b7fc45-14d8-492a-9c03-9ad62b9a4a93.jpg
+2025-01-27 09:57:46.168 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:57:46.174 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:57:47.678 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22863 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:57:47.679 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:57:48.098 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:57:48.103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:57:48.104 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:57:48.105 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:57:48.129 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:57:48.129 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 434 ms
+2025-01-27 09:57:48.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:57:48.430 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:57:48.436 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.931 seconds (process running for 1.144)
+2025-01-27 09:57:58.001 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 09:57:58.001 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 09:57:58.002 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 09:57:58.037 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传: WeChat945219ed6e4bc61c7a4be8503c720098.jpg
+2025-01-27 09:57:58.642 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/bda00003-799e-4027-9beb-68d021578306.jpg
+2025-01-27 09:58:29.208 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:58:29.213 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:58:30.696 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22893 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:58:30.697 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:58:31.132 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:58:31.140 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:58:31.143 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:58:31.147 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:58:31.174 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:58:31.174 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 451 ms
+2025-01-27 09:58:31.460 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:58:31.469 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:58:31.474 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.934 seconds (process running for 1.152)
+2025-01-27 09:58:40.371 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 09:58:40.371 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 09:58:40.372 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 09:58:40.396 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:575)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:544)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-01-27 09:58:49.831 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:58:49.837 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:58:51.295 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22914 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:58:51.296 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:58:51.720 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:58:51.726 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:58:51.726 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:58:51.727 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:58:51.751 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:58:51.752 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 438 ms
+2025-01-27 09:58:52.037 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:58:52.047 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:58:52.051 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.915 seconds (process running for 1.127)
+2025-01-27 09:59:24.904 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 09:59:24.904 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 09:59:24.905 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 09:59:24.918 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 09:59:24.927 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 09:59:25.075 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b364721
+2025-01-27 09:59:25.076 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 09:59:25.918 [http-nio-8080-exec-3] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 09:59:25.943 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 09:59:40.652 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 09:59:40.657 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 09:59:40.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 09:59:40.663 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 09:59:42.634 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22954 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 09:59:42.635 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 09:59:43.082 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 09:59:43.088 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:59:43.089 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 09:59:43.090 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 09:59:43.119 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 09:59:43.119 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 465 ms
+2025-01-27 09:59:43.289 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-27 09:59:43.427 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 09:59:43.436 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 09:59:43.441 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.972 seconds (process running for 1.189)
+2025-01-27 09:59:51.801 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 09:59:51.801 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 09:59:51.802 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-27 09:59:51.815 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 09:59:51.823 [http-nio-8080-exec-2] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 09:59:51.826 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 09:59:51.986 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@612d23a0
+2025-01-27 09:59:51.987 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 10:00:40.630 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 10:00:40.636 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 10:00:40.638 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 10:00:40.642 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 10:00:41.738 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 22984 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 10:00:41.739 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 10:00:42.181 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 10:00:42.186 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 10:00:42.187 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 10:00:42.187 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 10:00:42.215 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 10:00:42.215 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 459 ms
+2025-01-27 10:00:42.520 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 10:00:42.530 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 10:00:42.536 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.967 seconds (process running for 1.194)
+2025-01-27 10:18:18.889 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 10:18:18.890 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 10:18:18.892 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-01-27 10:18:18.928 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传: WeChat945219ed6e4bc61c7a4be8503c720098.jpg
+2025-01-27 10:18:19.669 [http-nio-8080-exec-1] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/d873b27d-7741-4d1b-ab6a-e9a897e4091e.jpg
+2025-01-27 10:26:16.078 [http-nio-8080-exec-4] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 10:26:16.088 [http-nio-8080-exec-3] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 10:26:16.100 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-27 10:26:16.207 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2421f1f
+2025-01-27 10:26:16.208 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-27 10:26:35.698 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-27 10:26:35.699 [http-nio-8080-exec-5] INFO  com.itheima.controller.EmpController-分页查询=================>>>>>>>: EmpQueryParam(page=1, pageSize=10, name=, gender=null, begin=null, end=null)
+2025-01-27 11:34:31.418 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-27 11:34:31.424 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-27 11:34:31.427 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-27 11:34:31.430 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-27 11:34:33.581 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 24982 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-27 11:34:33.582 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-27 11:34:34.015 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-27 11:34:34.020 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-27 11:34:34.021 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-27 11:34:34.022 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-27 11:34:34.049 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-27 11:34:34.049 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 449 ms
+2025-01-27 11:34:34.210 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-27 11:34:34.350 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-27 11:34:34.360 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-27 11:34:34.365 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.947 seconds (process running for 1.16)
+2025-01-27 11:35:10.686 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-27 11:35:10.686 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-27 11:35:10.686 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2025-01-27 11:35:10.721 [http-nio-8080-exec-2] INFO  com.itheima.controller.UploadController-文件上传: A、AV-光圈优先.png
+2025-01-27 11:35:11.723 [http-nio-8080-exec-2] INFO  com.itheima.controller.UploadController-文件上传OSS, url: https://daykalif-java-ai2.oss-cn-beijing.aliyuncs.com/2025/01/d74b2f2c-b431-40eb-b6ee-20cb401631c7.png
