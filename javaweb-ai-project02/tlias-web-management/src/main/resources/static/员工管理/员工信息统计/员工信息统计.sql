@@ -30,7 +30,7 @@ select case
            when job = 4 then '教研主管'
            when job = 5 then '咨询师'
            else '其他'
-           end as job_name,
-       count(*) as count
+           end  as pos,
+       count(*) as num
 from emp
 group by job;
