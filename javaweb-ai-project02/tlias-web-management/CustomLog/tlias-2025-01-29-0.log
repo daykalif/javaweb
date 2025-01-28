@@ -1,0 +1,4 @@
+2025-01-29 01:24:56.281 [http-nio-8080-exec-9] INFO  com.itheima.controller.SessionController-HttpSession-s1: 95416824
+2025-01-29 01:26:56.471 [http-nio-8080-exec-2] INFO  com.itheima.controller.SessionController-HttpSession-s1: 95416824
+2025-01-29 01:27:04.739 [http-nio-8080-exec-3] INFO  com.itheima.controller.SessionController-HttpSession-s2: 95416824
+2025-01-29 01:27:04.740 [http-nio-8080-exec-3] INFO  com.itheima.controller.SessionController-loginUser: tom
