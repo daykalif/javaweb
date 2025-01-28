@@ -113,7 +113,7 @@
     </update>
 
 
-    <!-- ======================================= 统计员工职位人数 ============================================ -->
+    <!-- ======================================= 统计员工人数 ============================================ -->
     <!--统计员工职位人数-->
     <select id="countEmpJobData" resultType="java.util.Map">
         select
@@ -125,5 +125,14 @@
         else '其他' end) pos,
         count(*) num
         from emp group by job order by num
+    </select>
+
+
+    <!--统计员工性别人数-->
+    <select id="countEmpGenderData" resultType="java.util.Map">
+        select
+        if(gender = 1, '男性员工', '女性员工') name,
+        count(*) value
+        from emp group by gender
     </select>
 </mapper>
