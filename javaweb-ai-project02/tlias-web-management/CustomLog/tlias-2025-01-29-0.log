@@ -298,3 +298,75 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2025-01-29 16:27:21.549 [http-nio-8080-exec-6] INFO  com.itheima.controller.DeptController-查询全部部门
 2025-01-29 16:27:21.567 [http-nio-8080-exec-6] INFO  com.itheima.filter.TokenFilter-拦截到了TokenFilter请求.... 放行后 .... 
 2025-01-29 16:27:21.568 [http-nio-8080-exec-6] INFO  com.itheima.filter.DemoFilter-拦截到了DemoFilter请求.... 放行后 .... 
+2025-01-29 20:08:51.406 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s432ms).
+2025-01-29 20:21:51.076 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m59s671ms).
+2025-01-29 20:29:30.297 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m39s72ms).
+2025-01-29 20:33:42.236 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m41s841ms).
+2025-01-29 20:41:14.789 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m2s492ms).
+2025-01-29 20:57:48.562 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m3s767ms).
+2025-01-29 21:27:12.879 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-29 21:27:12.890 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-29 21:27:12.896 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-29 21:27:12.905 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-29 21:27:12.909 [SpringApplicationShutdownHook] INFO  com.itheima.filter.DemoFilter-destroy 销毁方法 ....
+2025-01-29 21:27:15.339 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 19052 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-29 21:27:15.340 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-29 21:27:15.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-29 21:27:15.766 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-29 21:27:15.766 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-29 21:27:15.766 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-29 21:27:15.789 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-29 21:27:15.789 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 433 ms
+2025-01-29 21:27:15.812 [main] INFO  com.itheima.filter.DemoFilter-init 初始化方法 ....
+2025-01-29 21:27:15.939 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-29 21:27:16.098 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-29 21:27:16.106 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-29 21:27:16.111 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.931 seconds (process running for 1.224)
+2025-01-29 21:27:27.376 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-29 21:27:27.376 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-29 21:27:27.377 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-01-29 21:27:27.379 [http-nio-8080-exec-1] INFO  com.itheima.filter.DemoFilter-拦截到了DemoFilter请求.... 放行前 .... 
+2025-01-29 21:27:27.410 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-拦截到了TokenFilter请求.... 放行前 .... 
+2025-01-29 21:27:27.410 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-<<<=========================================令牌合法, 放行===================================>>>
+2025-01-29 21:27:27.420 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.DemoInterceptor-preHandle ....
+2025-01-29 21:27:27.426 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-29 21:27:27.436 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-29 21:27:27.716 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30a62ef0
+2025-01-29 21:27:27.717 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-29 21:27:27.781 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.DemoInterceptor-postHandle ....
+2025-01-29 21:27:27.781 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.DemoInterceptor-afterCompletion ....
+2025-01-29 21:27:27.782 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-拦截到了TokenFilter请求.... 放行后 .... 
+2025-01-29 21:27:27.782 [http-nio-8080-exec-1] INFO  com.itheima.filter.DemoFilter-拦截到了DemoFilter请求.... 放行后 .... 
+2025-01-29 21:29:19.284 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-29 21:29:19.295 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-01-29 21:29:19.299 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-01-29 21:29:19.304 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-01-29 21:29:19.306 [SpringApplicationShutdownHook] INFO  com.itheima.filter.DemoFilter-destroy 销毁方法 ....
+2025-01-29 21:29:21.349 [main] INFO  com.itheima.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 17.0.12 with PID 19249 (/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/target/classes started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-29 21:29:21.350 [main] INFO  com.itheima.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2025-01-29 21:29:21.725 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-01-29 21:29:21.730 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-29 21:29:21.731 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-01-29 21:29:21.731 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-29 21:29:21.753 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-01-29 21:29:21.753 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 388 ms
+2025-01-29 21:29:21.777 [main] INFO  com.itheima.filter.DemoFilter-init 初始化方法 ....
+2025-01-29 21:29:21.905 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-29 21:29:22.052 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-01-29 21:29:22.060 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-01-29 21:29:22.065 [main] INFO  com.itheima.TliasWebManagementApplication-Started TliasWebManagementApplication in 0.856 seconds (process running for 1.105)
+2025-01-29 21:29:40.433 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-29 21:29:40.434 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-01-29 21:29:40.436 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-01-29 21:29:40.439 [http-nio-8080-exec-1] INFO  com.itheima.filter.DemoFilter-拦截到了DemoFilter请求.... 放行前 .... 
+2025-01-29 21:29:40.492 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-拦截到了TokenFilter请求.... 放行前 .... 
+2025-01-29 21:29:40.493 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-<<<=========================================令牌合法, 放行===================================>>>
+2025-01-29 21:29:40.502 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.DemoInterceptor-############################## preHandle ... ##################################
+2025-01-29 21:29:40.507 [http-nio-8080-exec-1] INFO  com.itheima.controller.DeptController-查询全部部门
+2025-01-29 21:29:40.517 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-01-29 21:29:40.678 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@741192c5
+2025-01-29 21:29:40.679 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-01-29 21:29:40.748 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.DemoInterceptor------------ postHandle ... ---------
+2025-01-29 21:29:40.748 [http-nio-8080-exec-1] INFO  com.itheima.interceptor.DemoInterceptor-%%%%%%%%%%%%%%%%%%%%%%%%%%% afterCompletion ... %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+2025-01-29 21:29:40.749 [http-nio-8080-exec-1] INFO  com.itheima.filter.TokenFilter-拦截到了TokenFilter请求.... 放行后 .... 
+2025-01-29 21:29:40.749 [http-nio-8080-exec-1] INFO  com.itheima.filter.DemoFilter-拦截到了DemoFilter请求.... 放行后 .... 
