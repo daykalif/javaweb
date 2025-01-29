@@ -2,7 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/main/java/com/itheima/mapper/DeptMapper.java" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/sql-数据库表/dept.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/员工管理/员工列表查询/emp &amp; emp_expr.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/员工管理/多表关系/一对一/user &amp; card.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/员工管理/多表关系/一对多/dept &amp; emp.sql" dialect="MySQL" />
@@ -10,5 +9,6 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/static/员工管理/多表查询/多表查询/01. 数据准备.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/员工管理/多表查询/多表查询/02. 多表查询-内连接.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/员工管理/多表查询/案例.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/部门管理/dept.sql" dialect="MySQL" />
   </component>
 </project>
