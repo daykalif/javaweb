@@ -25,6 +25,6 @@ public class WebConfig implements WebMvcConfigurer {
 
 		registry.addInterceptor(tokenInterceptor)
 				.addPathPatterns("/**") // 拦截所有请求
-				.excludePathPatterns("/login"); // 不拦截哪些请求
+				.excludePathPatterns("/login"); // 不拦截哪些请求；	如果增加了这行，就可以注释TokenInterceptor中拦截/login的代码了
 	}
 }
