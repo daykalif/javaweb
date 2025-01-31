@@ -1,3 +1,6 @@
+server:
+  port: 8082
+
 #有以下配置后，就不需要application.properties文件了【二选一即可】
 spring:
   application:
