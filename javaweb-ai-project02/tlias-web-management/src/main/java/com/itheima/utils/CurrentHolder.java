@@ -1,5 +1,8 @@
 package com.itheima.utils;
 
+/**
+ * 定义ThreadLocal操作工作类，存储当前线程的当前登录用户id
+ */
 public class CurrentHolder {
 
 	private static final ThreadLocal<Integer> CURRENT_LOCAL = new ThreadLocal<>();

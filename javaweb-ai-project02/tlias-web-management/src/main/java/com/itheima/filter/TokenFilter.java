@@ -1,6 +1,8 @@
 package com.itheima.filter;
 
+import com.itheima.utils.CurrentHolder;
 import com.itheima.utils.JwtUtils;
+import io.jsonwebtoken.Claims;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
@@ -33,13 +35,16 @@ public class TokenFilter implements Filter {
 		//4. 判断token是否存在, 如果不存在, 说明用户没有登录, 返回错误信息(响应401状态码)
 		if (token == null || token.isEmpty()) {
 			log.info("令牌为空, 响应401");
-			response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);	// 给response设置状态码401
+			response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);    // 给response设置状态码401
 			return;
 		}
 
 		//5. 如果token存在, 校验令牌, 如果校验失败 -> 返回错误信息(响应401状态码)
 		try {
-			JwtUtils.parseToken(token);
+			Claims claims = JwtUtils.parseToken(token);
+			Integer empId = Integer.valueOf(claims.get("id").toString());
+			CurrentHolder.setCurrentId(empId); //存入
+			log.info("当前登录员工ID: {}, 将其存入ThreadLocal", empId);
 		} catch (Exception e) {
 			log.info("令牌非法, 响应401");
 			response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
@@ -51,6 +56,9 @@ public class TokenFilter implements Filter {
 
 		log.info("<<<=========================================令牌合法, 放行===================================>>>");
 		filterChain.doFilter(request, response);
+
+		//7. 删除ThreadLocal中的数据
+		CurrentHolder.remove();
 
 		log.info("拦截到了TokenFilter请求.... 放行后 .... ");
 	}
