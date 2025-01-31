@@ -31,7 +31,9 @@ public class MyAspect5 {
 	//@Before("execution(* com.itheima.service.*.*(..))")
 
 	//匹配list 与 delete 方法
-	@Before("execution(* com.itheima.service.impl.DeptServiceImpl.list(..)) || execution(* com.itheima.service.impl.DeptServiceImpl.delete(..))")
+	//@Before("execution(* com.itheima.service.impl.DeptServiceImpl.list(..)) || execution(* com.itheima.service.impl.DeptServiceImpl.delete(..))")
+
+	@Before("@annotation(com.itheima.anno.LogOperation)")
 	public void before() {
 		log.info("MyAspect5 -> before ...");
 	}

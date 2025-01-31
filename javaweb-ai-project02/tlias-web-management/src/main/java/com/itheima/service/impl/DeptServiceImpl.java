@@ -1,5 +1,6 @@
 package com.itheima.service.impl;
 
+import com.itheima.anno.LogOperation;
 import com.itheima.mapper.DeptMapper;
 import com.itheima.pojo.Dept;
 import com.itheima.service.DeptService;
@@ -23,6 +24,7 @@ public class DeptServiceImpl implements DeptService {
 	@Autowired
 	private DeptMapper deptMapper;
 
+	@LogOperation    // 切入点表达式@Annotation在使用时需要根据注解@LogOperation来定位需要执行的方法；表示当前方法需要记录日志，用于AOP代理
 	@Override
 	public List<Dept> findAll() {
 		return deptMapper.findAll();
