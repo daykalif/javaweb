@@ -550,3 +550,51 @@
 2025-01-31 16:56:03.016 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
 2025-01-31 16:56:03.934 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
 2025-01-31 16:56:04.529 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.618 seconds (process running for 2.056)
+2025-01-31 17:14:41.839 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:14:41.890 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:14:42.043 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 24181 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:14:42.043 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:14:42.950 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:14:43.554 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.608 seconds (process running for 2.032)
+2025-01-31 17:26:26.388 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:26:26.438 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:26:26.592 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 24494 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:26:26.592 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:26:27.472 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:26:28.106 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.613 seconds (process running for 2.034)
+2025-01-31 17:29:59.881 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:29:59.929 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:30:00.093 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 24910 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:30:00.093 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:30:01.019 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:30:01.639 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.649 seconds (process running for 2.131)
+2025-01-31 17:35:41.632 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:35:41.683 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:35:41.860 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 25155 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:35:41.860 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:35:42.811 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:35:43.423 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.679 seconds (process running for 2.123)
+2025-01-31 17:37:44.043 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:37:44.096 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:37:44.257 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 25256 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:37:44.257 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:37:45.197 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:37:45.806 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.652 seconds (process running for 2.15)
+2025-01-31 17:38:31.829 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:38:31.881 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:38:32.046 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 25298 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:38:32.047 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:38:32.957 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:38:33.551 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.61 seconds (process running for 2.093)
+2025-01-31 17:39:23.376 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:39:23.424 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:39:23.583 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 25328 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:39:23.583 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:39:24.453 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:39:25.025 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.546 seconds (process running for 1.96)
+2025-01-31 17:45:38.726 [main] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils-Could not detect default configuration classes for test class [com.itheima.SpringbootWebTests]: SpringbootWebTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-01-31 17:45:38.781 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper-Found @SpringBootConfiguration com.itheima.TliasWebManagementApplication for test class com.itheima.SpringbootWebTests
+2025-01-31 17:45:38.955 [main] INFO  com.itheima.SpringbootWebTests-Starting SpringbootWebTests using Java 17.0.12 with PID 25786 (started by daykalif in /Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management)
+2025-01-31 17:45:38.956 [main] INFO  com.itheima.SpringbootWebTests-No active profile set, falling back to 1 default profile: "default"
+2025-01-31 17:45:39.869 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping-Adding welcome page: class path resource [static/index.html]
+2025-01-31 17:45:40.479 [main] INFO  com.itheima.SpringbootWebTests-Started SpringbootWebTests in 1.634 seconds (process running for 2.123)
