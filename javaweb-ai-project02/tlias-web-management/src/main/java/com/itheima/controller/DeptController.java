@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -19,11 +21,21 @@ import java.util.List;
  *
  * @Controller：将控制层的类也交给IOC容器管理
  * @ResponseBody：标识当前方法的返回值，直接作为响应体返回给浏览器；如果返回值是一个对象，则默认转换为json格式返回；
+ *
+ *
+ * 默认bean是单例的 - singleton：默认单例的bean是在项目启动时创建的，创建完毕后，会将该bean存入IOC容器中；
  */
-@Slf4j	// 日志对象
+@Lazy	// 延迟初始化-->延迟到第一次使用的时候，再来创建这个bean
+//@Scope("prototype")	// prototype：非单例/多例
+@Slf4j    // 日志对象
 @RequestMapping("/depts")
 @RestController
 public class DeptController {
+	// 无参构造
+	public DeptController() {
+		System.out.println("创建DeptController对象...");
+	}
+
 	/*
 	 * 如果类名上增加了注解@Slf4j，则会自动生成一个日志对象，可以直接使用；如果不加，则需要手动创建一个日志对象，代码如下：
 	 * private static final Logger logger = LoggerFactory.getLogger(DeptController.class);
