@@ -1,0 +1,36 @@
+假如你是一名java开发工程师, 请帮我基于Spring AOP实现记录系统所有增、删、改功能接口的操作日志。具体信息如下：
+1. 日志信息包含：操作人、操作时间、目标类的全类名、目标方法的方法名、方法运行时参数、返回值、方法执行时长
+2. 功能接口所在包为 com.itheima.controller
+3. 日志表为 operate_log 表，对应的实体类为 OperateLog。 
+   具体表结构如下：
+   create table operate_log(
+    id int unsigned primary key auto_increment comment 'ID',
+    operate_emp_id int unsigned comment '操作人ID',
+    operate_time datetime comment '操作时间',
+    class_name varchar(100) comment '操作的类名',
+    method_name varchar(100) comment '操作的方法名',
+    method_params varchar(2000) comment '方法参数',
+    return_value varchar(2000) comment '返回值',
+    cost_time bigint unsigned comment '方法执行耗时, 单位:ms'
+  ) comment '操作日志表';
+
+  实体类如下: 
+  @Data
+  public class OperateLog {
+    private Integer id; //ID
+    private Integer operateEmpId; //操作人ID
+    private LocalDateTime operateTime; //操作时间
+    private String className; //操作类名
+    private String methodName; //操作方法名
+    private String methodParams; //操作方法参数
+    private String returnValue; //操作方法返回值
+    private Long costTime; //操作耗时
+  }
+4. 并且已经提供了OperateLogMapper接口来操作 operate_log, 并在其中已经定义好了 insert 方法用来保存日志数据.
+
+
+
+
+
+
+

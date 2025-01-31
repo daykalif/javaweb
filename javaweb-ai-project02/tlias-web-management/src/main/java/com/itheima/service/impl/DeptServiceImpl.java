@@ -30,6 +30,7 @@ public class DeptServiceImpl implements DeptService {
 		return deptMapper.findAll();
 	}
 
+	@LogOperation
 	@Override
 	public void deleteById(Integer id) {
 		deptMapper.deleteById(id);
@@ -38,6 +39,7 @@ public class DeptServiceImpl implements DeptService {
 	/**
 	 * Step4: 新增部门-实现类
 	 */
+	@LogOperation
 	@Override
 	public void add(Dept dept) {
 		//	a.补全基础属性 - createTime, updateTime
@@ -56,6 +58,7 @@ public class DeptServiceImpl implements DeptService {
 	/**
 	 * 修改部门-实现类
 	 */
+	@LogOperation
 	@Override
 	public void update(Dept dept) {
 		//	补全基础属性 - updateTime
