@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="feat：145 原理篇-SpringBoot原理-自动配置-源码配置">
+    <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="feat：146 原理篇-SpringBoot原理-自动配置-源码配置（@Conditional）">
+      <change afterPath="$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/java/com/aliyun/oss/AliyunOSSOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/java/com/aliyun/oss/AliyunOSSProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/java/com/aliyun/oss/AliyunOssAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-autoconfiguration-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-autoconfiguration-test/src/main/java/com/itheima/SpringbootAutoconfigurationTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-autoconfiguration-test/src/main/java/com/itheima/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-autoconfiguration-test/src/main/resources/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/前端相关/1.案例路由实现.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/11.自动配置-@Conditional.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/12.自动配置原理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/13.自动配置-小结.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/14.自定义starter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/15.自定义starter-操作步骤.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/16.自动配置原理源码跟踪流程图.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/员工管理/文件上传/配置access_key.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itheima-utils/src/main/java/com/example/HeaderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/itheima-utils/src/main/java/com/example/HeaderConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/CustomLog/tlias-2025-02-01-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/CustomLog/tlias-2025-02-01-0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/TliasWebManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/TliasWebManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/src/test/java/com/itheima/GsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/test/java/com/itheima/GsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,7 +76,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/daykalif/Desktop/web-project/javaweb-ai-project02",
+    "last_opened_file_path": "/Users/daykalif/Desktop/web-project/javaweb-ai-project02/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,8 +95,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/resources/META-INF/spring" />
+      <recent name="$PROJECT_DIR$/aliyun-oss-spring-boot-autoconfigure/src/main/java/com/aliyun/oss" />
       <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/sql-数据库表" />
-      <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇" />
@@ -99,7 +109,7 @@
       <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GsonTest">
+  <component name="RunManager">
     <configuration name="GsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tlias-web-management" />
       <extension name="coverage">
@@ -163,6 +173,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootAutoconfigurationTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-autoconfiguration-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.SpringbootAutoconfigurationTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TliasWebManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tlias-web-management" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.TliasWebManagementApplication" />
@@ -190,7 +207,7 @@
       <workItem from="1736920818694" duration="958000" />
       <workItem from="1736921791406" duration="1187000" />
       <workItem from="1736922997770" duration="73000" />
-      <workItem from="1738374470252" duration="10806000" />
+      <workItem from="1738374470252" duration="16894000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add 第三方工具包">
       <option name="closed" value="true" />
@@ -224,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738386051063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat：146 原理篇-SpringBoot原理-自动配置-源码配置（@Conditional）">
+      <option name="closed" value="true" />
+      <created>1738392730148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738392730148</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +260,7 @@
     <MESSAGE value="feat：144 原理篇-SpringBoot原理-自动配置-方案一：@ComponentScan" />
     <MESSAGE value="feat：144 原理篇-SpringBoot原理-自动配置-方案二：@Import/@EnableXxx" />
     <MESSAGE value="feat：145 原理篇-SpringBoot原理-自动配置-源码配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat：145 原理篇-SpringBoot原理-自动配置-源码配置" />
+    <MESSAGE value="feat：146 原理篇-SpringBoot原理-自动配置-源码配置（@Conditional）" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat：146 原理篇-SpringBoot原理-自动配置-源码配置（@Conditional）" />
   </component>
 </project>
