@@ -12,6 +12,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <!-- 聚合哪些模块-->
+    <modules>
+        <module>../tlias-pojo</module>
+        <module>../tlias-utils</module>
+        <module>../tlias-web-management</module>
+    </modules>
+
     <groupId>com.itheima</groupId>
     <artifactId>tlias-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
