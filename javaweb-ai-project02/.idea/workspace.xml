@@ -5,97 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="feat：147 原理篇-SpringBoot原理-自动配置-自定义starter">
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/前端相关/1.案例路由实现.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/Maven原理/1.分模块设计.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/Maven原理/2.分模块设计.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/Maven原理/3.分模块设计-策略.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/Maven原理/4.分模块开发.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/员工管理/文件上传/配置access_key.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/CustomLog/tlias-2025-02-01-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/EmpExpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/EmpLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/EmpQueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/JobOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/LoginInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/OperateLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/src/main/java/com/itheima/pojo/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/src/main/java/com/itheima/utils/AliyunOSSOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/src/main/java/com/itheima/utils/AliyunOSSProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/src/main/java/com/itheima/utils/AliyunOSSThirdOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/src/main/java/com/itheima/utils/CurrentHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/src/main/java/com/itheima/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/TliasWebManagementApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/anno/LogOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/MyAspect1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/MyAspect2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/MyAspect3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/MyAspect4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/MyAspect5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/MyAspect6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/OperationLogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/aop/RecordTimeAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/config/CommonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/controller/DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/controller/EmpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/controller/ReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/controller/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/controller/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/filter/DemoFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/filter/TokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/interceptor/DemoInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/interceptor/TokenInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/mapper/DeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/mapper/EmpExprMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/mapper/EmpLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/mapper/EmpMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/mapper/OperateLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/DeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/EmpLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/EmpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/ReportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/impl/EmpLogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/impl/EmpServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/java/com/itheima/service/impl/ReportServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/com/itheima/mapper/EmpExprMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/com/itheima/mapper/EmpMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/nginx相关/nginx-javaweb课上老师的配置.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/nginx相关/nginx安装时自带的配置.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/nginx相关/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/1.分模块设计.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/2.分模块设计.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/3.分模块设计-策略.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/4.分模块开发.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/在线讲义地址.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/GsonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/JwtTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/LogTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/OssJavaSdkQuickStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/SpringbootWebTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/ThreadLocalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/TliasWebManagementApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/UUIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-parent/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/继承/1.继承.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/继承/2.继承.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/继承/3.继承关系实现.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/继承/4.继承关系实现.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/CustomLog/tlias-2025-02-01-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/CustomLog/tlias-2025-02-01-0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-pojo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-utils/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/1.分模块设计.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/2.分模块设计.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/3.分模块设计-策略.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/4.分模块开发.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/Maven原理/5.分模块设计与开发-小结.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/GsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/test/java/com/itheima/GsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

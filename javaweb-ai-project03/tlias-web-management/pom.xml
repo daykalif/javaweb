@@ -2,12 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- 配置父工程 -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.itheima</groupId>
+        <artifactId>tlias-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../tlias-parent/pom.xml</relativePath>
     </parent>
+
     <groupId>com.itheima</groupId>
     <artifactId>tlias-web-management</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -45,12 +48,6 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
 
         <!--Spring Boot 自动配置机制会根据 spring-boot-starter-test 的依赖自动配置测试环境，开发者无需手动配置大量的测试相关的 Bean 和属性，大大减少了测试配置的工作量。
         例如，在进行 Spring 上下文相关的测试时，Spring Boot 会自动加载并配置一个轻量级的测试上下文，使得测试代码可以方便地与 Spring 框架集成。-->
