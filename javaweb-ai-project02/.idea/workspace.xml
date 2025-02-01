@@ -4,31 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/CustomLog/tlias-2025-02-01-0.log" afterDir="false" />
+    <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="feat：144 原理篇-SpringBoot原理-自动配置-方案一：@ComponentScan">
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/前端相关/1.案例路由实现.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/4.什么是自动配置.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/6.自动配置实现方案二.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/7.自动配置实现方案二.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/SpringBoot原理/8.自动配置实现方案-小结.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/员工管理/文件上传/配置access_key.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-management/src/test/java/com/itheima/GsonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itheima-utils/src/main/java/com/example/MyImportSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/itheima-utils/src/main/java/com/example/MyImportSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-management/CustomLog/tlias-2025-02-01-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/CustomLog/tlias-2025-02-01-0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/TliasWebManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/main/java/com/itheima/TliasWebManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/Spring原理/1.课程目录.png" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/原理篇/1.课程目录.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-management/src/test/java/com/itheima/GsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-management/src/test/java/com/itheima/GsonTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,7 +98,7 @@
       <recent name="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/img" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GsonTest.testTokenParser">
+  <component name="RunManager" selected="JUnit.GsonTest">
     <configuration name="GsonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tlias-web-management" />
       <extension name="coverage">
@@ -113,6 +110,38 @@
       <option name="PACKAGE_NAME" value="com.itheima" />
       <option name="MAIN_CLASS_NAME" value="com.itheima.GsonTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GsonTest.testHeaderGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tlias-web-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.GsonTest" />
+      <option name="METHOD_NAME" value="testHeaderGenerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GsonTest.testHeaderParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tlias-web-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.GsonTest" />
+      <option name="METHOD_NAME" value="testHeaderParser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,8 +171,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GsonTest.testTokenParser" />
         <item itemvalue="JUnit.GsonTest" />
+        <item itemvalue="JUnit.GsonTest.testHeaderGenerator" />
+        <item itemvalue="JUnit.GsonTest.testHeaderParser" />
+        <item itemvalue="JUnit.GsonTest.testTokenParser" />
       </list>
     </recent_temporary>
   </component>
@@ -158,11 +189,33 @@
       <workItem from="1736920818694" duration="958000" />
       <workItem from="1736921791406" duration="1187000" />
       <workItem from="1736922997770" duration="73000" />
-      <workItem from="1738374470252" duration="1379000" />
+      <workItem from="1738374470252" duration="2613000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add 第三方工具包">
+      <option name="closed" value="true" />
+      <created>1738375994029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738375994029</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat：144 原理篇-SpringBoot原理-自动配置-方案一：@ComponentScan">
+      <option name="closed" value="true" />
+      <created>1738376062243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738376062243</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add 第三方工具包" />
+    <MESSAGE value="feat：144 原理篇-SpringBoot原理-自动配置-方案一：@ComponentScan" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat：144 原理篇-SpringBoot原理-自动配置-方案一：@ComponentScan" />
   </component>
 </project>

@@ -1,5 +1,7 @@
 package com.itheima;
 
+import com.example.HeaderGenerator;
+import com.example.HeaderParser;
 import com.example.TokenParser;
 import com.google.gson.Gson;
 import com.itheima.pojo.Result;
@@ -24,5 +26,21 @@ public class GsonTest {
 	@Test
 	public void testTokenParser() {
 		tokenParser.parse();
+	}
+
+	@Autowired
+	private HeaderParser headerParser;
+
+	@Test
+	public void testHeaderParser() {
+		headerParser.parse();
+	}
+
+	@Autowired
+	private HeaderGenerator headerGenerator;
+
+	@Test
+	public void testHeaderGenerator() {
+		headerGenerator.generate();
 	}
 }
