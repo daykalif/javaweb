@@ -40,3 +40,7 @@ aliyun:
     endpoint: https://oss-cn-beijing.aliyuncs.com
     bucketName: daykalif-java-ai2
     region: cn-beijing
+
+
+# 判断配置文件中有对应属性和值，才注册bean到IOC容器。
+myname: itheima

@@ -20,13 +20,13 @@ public class GsonTest {
 	}
 
 
-	@Autowired
-	private TokenParser tokenParser;
-
-	@Test
-	public void testTokenParser() {
-		tokenParser.parse();
-	}
+	//@Autowired
+	//private TokenParser tokenParser;
+	//
+	//@Test
+	//public void testTokenParser() {
+	//	tokenParser.parse();
+	//}
 
 	@Autowired
 	private HeaderParser headerParser;
@@ -36,11 +36,11 @@ public class GsonTest {
 		headerParser.parse();
 	}
 
-	@Autowired
-	private HeaderGenerator headerGenerator;
-
-	@Test
-	public void testHeaderGenerator() {
-		headerGenerator.generate();
-	}
+	//@Autowired
+	//private HeaderGenerator headerGenerator;
+	//
+	//@Test
+	//public void testHeaderGenerator() {
+	//	headerGenerator.generate();
+	//}
 }

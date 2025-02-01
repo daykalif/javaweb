@@ -23,7 +23,7 @@ import org.springframework.context.annotation.Import;
  *		@EnableXxx
  * 			第三方组件开发人员透出的配置，如：@EnableHeaderConfig
  */
-@EnableHeaderConfig
+@Import(HeaderConfig.class)
 @ServletComponentScan // 开启了SpringBoot对Servlet组件的支持
 @SpringBootApplication    // 具备组件扫描功能，默认扫描当前包（该项目中指的是com.itheima这个包）及其子包
 public class TliasWebManagementApplication {
