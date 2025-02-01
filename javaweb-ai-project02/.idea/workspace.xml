@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="feat：147 原理篇-SpringBoot原理-自动配置-自定义starter">
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/员工管理/文件上传/配置access_key.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/原理篇/聚合/1.聚合.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-parent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
