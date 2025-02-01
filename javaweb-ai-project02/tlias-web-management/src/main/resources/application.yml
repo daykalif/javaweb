@@ -17,6 +17,8 @@ spring:
       max-file-size: 10MB
       # 最大请求大小(包括所有文件和表单数据)
       max-request-size: 100MB
+  main:
+    allow-bean-definition-overriding: true  #解决重复注册bean的问题：项目中，两个不同的配置类中定义了同名的 getAliyunOSSOperatorThird bean 。
 
 #Mybatis的相关配置
 mybatis:

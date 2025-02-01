@@ -124,6 +124,14 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.24</version>
         </dependency>
+
+        <!-- 自定义第三方依赖 -->
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>itheima-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>
