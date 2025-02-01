@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="940fbf46-0f4f-4d33-8d5b-bb000bc74b22" name="Changes" comment="feat：147 原理篇-SpringBoot原理-自动配置-自定义starter">
       <change afterPath="$PROJECT_DIR$/tlias-web-management/src/main/resources/static/员工管理/文件上传/配置access_key.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/1.介绍.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/2.私服-小结.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/3.资源上传与下载.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/4.资源上传与下载.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/5.资源上传与下载.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/6.资源上传与下载.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/7.资源上传与下载.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaweb-ai-project03/tlias-web-management/src/main/resources/static/私服/在线讲义.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
