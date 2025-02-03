@@ -13,3 +13,4 @@ nginx日志：/opt/homebrew/var/log/nginx
 tomcat安装地址：cd /opt/homebrew/etc/tomcat@9
 
 
+该目录下的www文件夹就是nginx替换前端html页面的www文件夹：/opt/homebrew/var/www
