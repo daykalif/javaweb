@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/javaweb-ai-project01/springboot-mybatis-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb-ai-project01/springboot-mybatis-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb-ai-project01/springboot-mybatis-xml2/pom.xml" />
       </list>
     </option>
   </component>
