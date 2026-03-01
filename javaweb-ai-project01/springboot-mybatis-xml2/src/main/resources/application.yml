@@ -3,6 +3,9 @@ user:
   name: Tom
   age: 18
   gender: 男
+  pswd: 123
+  # 注意：yml配置文件中以0开头的值表示八进制，如果想表示其本身含义，需要用''引起来
+  password: '0123'
 
 #定义数组/List/Set集合
 hobby:
@@ -11,7 +14,7 @@ hobby:
   - Sport
 
 
-#有以下配置后，就不需要application.properties文件了【二选一即可】
+#有了application.yml文件并有以下配置后，就不需要application.properties文件了，可以删除application.properties文件【二选一即可】
 spring:
   application:
     name: springboot-mybatis-quickstart
@@ -20,7 +23,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/web01
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
+    username: daykalif_web
     password: Wjp7867137639
 
 #Mybatis的相关配置
